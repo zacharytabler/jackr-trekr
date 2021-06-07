@@ -47,8 +47,8 @@ public class Populator implements CommandLineRunner {
         continentRepo.save(antarctica);
         continentRepo.save(australia);
 
-        Trek machuPitchu = new Trek("Matchu Picchu", "An Incan citadel set high in the Andes Mountains", southAmerica, difficult, "A big lunch", "Three Days", "It was great!" );
-        trekRepo.save(machuPitchu); 
+        Trek machuPitchu = new Trek("Machu Picchu", "An Incan citadel set high in the Andes Mountains", southAmerica, difficult, "A big lunch", "Three Days", "It was great!" );
+        trekRepo.save(machuPitchu);
     }
 
 }
