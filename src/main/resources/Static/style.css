@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?famil=lato');
+
+.about-section{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        color: black;
+        padding: 15px 0;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 700;
+}
+
+.row {
+    color:black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.column{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
+
+.card {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
