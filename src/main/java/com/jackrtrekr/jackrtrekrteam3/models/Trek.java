@@ -14,6 +14,8 @@ public class Trek {
     private String description;
    @ManyToOne
     private Continent continent;
+   @ManyToOne
+   private Region region;
     @ManyToOne
     private Type type;
     private String packList;
@@ -48,6 +50,8 @@ public class Trek {
         return continent;
     }
 
+    public Region getRegion() {return region;}
+
     public Type getType() {
         return type;
     }
@@ -56,10 +60,11 @@ public class Trek {
 
     }
 
-    public Trek(String name, String description, Continent continent, Type type, String packList, String length, String reviews) {
+    public Trek(String name, String description, Continent continent, Region region, Type type, String packList, String length, String reviews) {
         this.name = name;
         this.description = description;
         this.continent = continent;
+        this.region = region;
         this.type = type;
         this.packList = packList;
         this.length = length;

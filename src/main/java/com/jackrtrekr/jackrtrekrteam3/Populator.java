@@ -12,6 +12,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import javax.persistence.Lob;
+import java.awt.*;
 
 @Component
 public class Populator implements CommandLineRunner {
@@ -52,38 +54,45 @@ public class Populator implements CommandLineRunner {
         continentRepo.save(antarctica);
         continentRepo.save(australia);
 
+        Region mountainousWest = new Region("The Mountainous West");
+        Region greatPlains = new Region("The Great Plains");
+        Region canadianShield = new Region("The Canadian Shield");
+        Region variedEasternRegion = new Region("The Varied Eastern Region");
+        Region caribbean = new Region ("The Caribbean");
+        Region patagonia = new Region("Patagonia");
+        Region andesMountains = new Region ("The Andes Mountains");
+        Region brazilianCoastline = new Region("The Brazilian Coastline");
+        Region amazon = new Region ("The Amazon");
+        Region pantanal = new Region ("The Pantanal");
+        Region balkanPeninsula = new Region("The Balkan Peninsula");
+        Region iberianPeninsula = new Region("The Iberian Peninsula");
+        Region italianPeninsula = new Region("The Italian Peninsula");
+        Region scandinavianPeninsula = new Region("The Scandinavian Peninsula");
+        Region fennoscandianPeninsula = new Region("The Fennoscandian Peninsula");
+        Region jutlandPeninsula = new Region("The Jutland Peninsula");
+        Region sahel = new Region ("The Sahel");
+        Region sahara = new Region("The Sahara");
+        Region ethiopianHighlands = new Region ("The Ethiopian Highlands");
+        Region savanna = new Region ("The Savanna");
+        Region swahiliCoast = new Region ("The Swahili Coast");
+        Region rainForest = new Region ("The Rain Forest");
+        Region africanGreatLakes = new Region ("The African Great Lakes");
+        Region southernAfrica = new Region ("Southern Africa");
+        Region centralAsia = new Region("Central Asia");
+        Region southPole = new Region("South Pole");
+        Region australianCapitalTerritory = new Region ("Australian Capital Territory");
+        Region newSouthWales = new Region("New South Wales");
+        Region northernTerritory = new Region ("Northern Territory");
+        Region queensLand = new Region("Queensland");
+        Region southAustralia = new Region("South Australia");
+        Region tasmaniaHobart = new Region("Tasmania-Hobart");
+        Region victoriaMelbourne = new Region ("Victoria-Melbourne");
+        Region westernAustralia = new Region ("Western Australia");
+        Region southeastAsia = new Region ("Southeast Asia");
+        Region eastAsia = new Region ("East Asia");
+        Region southAsia = new Region ("South Asia");
+        Region southwestAsia = new Region ("Southwest Asia");
 
-        Trek machuPicchu = new Trek("Machu Picchu", "An Incan citadel set high in the Andes Mountains", southAmerica, difficult, "A big lunch", "Three Days", "It was great!");
-        trekRepo.save(machuPicchu);
-
-        Region mountainousWest = new Region("The Mountainous West", northAmerica);
-        Region greatPlains = new Region("The Great Plains", northAmerica);
-        Region canadianShield = new Region("The Canadian Shield", northAmerica);
-        Region variedEasternRegion = new Region("The Varied Eastern Region", northAmerica);
-        Region caribbean = new Region ("The Caribbean", northAmerica);
-        Region patagonia = new Region("Patagonia", southAmerica);
-        Region andesMountains = new Region ("The Andes Mountains", southAmerica);
-        Region brazilianCoastline = new Region("The Brazilian Coastline", southAmerica);
-        Region amazon = new Region ("The Amazon", southAmerica);
-        Region pantanal = new Region ("The Pantanal", southAmerica);
-        Region balkanPeninsula = new Region("The Balkan Peninsula", europe);
-        Region iberianPeninsula = new Region("The Iberian Peninsula", europe);
-        Region italianPeninsula = new Region("The Italian Peninsula", europe);
-        Region scandinavianPeninsula = new Region("The Scandinavian Peninsula", europe);
-        Region fennoscandianPeninsula = new Region("The Fennoscandian Peninsula", europe);
-        Region jutlandPeninsula = new Region("The Jutland Peninsula", europe);
-        Region sahel = new Region ("The Sahel", africa);
-        Region sahara = new Region("The Sahara", africa);
-        Region ethiopianHighlands = new Region ("The Ethiopian Highlands", africa);
-        Region savanna = new Region ("The Savanna", africa);
-        Region swahiliCoast = new Region ("The Swahili Coast", africa);
-        Region rainForest = new Region ("The Rain Forest", africa);
-        Region africanGreatLakes = new Region ("The African Great Lakes", africa);
-        Region southernAfrica = new Region ("Southern Africa", africa);
-        Region centralAsia = new Region("Central Asia", asia);
-        Region southPole = new Region("South Pole", antarctica);
-        Region newSouthWales = new Region("New South Wales", australia);
-        Region queensLand = new Region("Queensland", australia);
         regionRepo.save(mountainousWest);
         regionRepo.save(patagonia);
         regionRepo.save(balkanPeninsula);
@@ -113,6 +122,19 @@ public class Populator implements CommandLineRunner {
         regionRepo.save(rainForest);
         regionRepo.save(africanGreatLakes);
         regionRepo.save(southernAfrica);
+        regionRepo.save(australianCapitalTerritory);
+        regionRepo.save(northernTerritory);
+        regionRepo.save(southAustralia);
+        regionRepo.save(tasmaniaHobart);
+        regionRepo.save(victoriaMelbourne);
+        regionRepo.save(westernAustralia);
+        regionRepo.save(southeastAsia);
+        regionRepo.save(eastAsia);
+        regionRepo.save(southAsia);
+        regionRepo.save(southwestAsia);
+
+        Trek annaPurna = new Trek("Annapurna Circuit", "The Annapurna Circuit is a trek within the mountain ranges of central Nepal. The total length of the route varies between 100 and 145 miles.", asia, southAsia, difficult, "Annapurna Circuit Pack List", "Fifteen to Twenty Five Days", "It was great!");
+        trekRepo.save(annaPurna);
 
     }
 

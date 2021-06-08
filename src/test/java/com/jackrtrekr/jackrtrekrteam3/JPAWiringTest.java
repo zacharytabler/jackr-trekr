@@ -1,6 +1,7 @@
 package com.jackrtrekr.jackrtrekrteam3;
 
 import com.jackrtrekr.jackrtrekrteam3.models.Continent;
+import com.jackrtrekr.jackrtrekrteam3.models.Region;
 import com.jackrtrekr.jackrtrekrteam3.models.Trek;
 import com.jackrtrekr.jackrtrekrteam3.models.Type;
 import org.junit.jupiter.api.Test;
@@ -35,7 +36,8 @@ public class JPAWiringTest {
     public void continentShouldHaveListOfTreks() {
         Continent testContinent = new Continent("Test Location");
         Type testType = new Type("Test Type");
-        Trek testTrek = new Trek("Name", "Description", testContinent, testType, "packList", "length", "reviews");
+        Region testRegion = new Region("Test Region");
+        Trek testTrek = new Trek("Name", "Description", testContinent, testRegion, testType, "packList", "length", "reviews");
 
         continentRepo.save(testContinent);
         typeRepo.save(testType);

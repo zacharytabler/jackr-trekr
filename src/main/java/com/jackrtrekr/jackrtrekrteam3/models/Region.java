@@ -21,17 +21,12 @@ public class Region {
         return location;
     }
 
-    public Continent getContinent(){
-        return continent;
-    }
-
     public Region() {
 
     }
 
-    public Region (String location, Continent continent){
+    public Region (String location){
         this.location = location;
-        this.continent = continent;
     }
 
     @Override
