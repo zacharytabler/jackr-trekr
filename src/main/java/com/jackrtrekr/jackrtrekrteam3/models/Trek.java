@@ -11,6 +11,7 @@ public class Trek {
     @GeneratedValue
     private Long id;
     private String name;
+    @Lob
     private String description;
    @ManyToOne
     private Continent continent;
