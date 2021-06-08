@@ -20,7 +20,7 @@ public class ContinentController {
     @RequestMapping("/continents")
     public String displayContinents(Model model){
         model.addAttribute("continents", continentRepo.findAll());
-        return "continentsview";
+        return "continentsView";
     }
 
     @GetMapping("/continents/{location}")
