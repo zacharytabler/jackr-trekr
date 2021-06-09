@@ -4,6 +4,6 @@ import com.jackrtrekr.jackrtrekrteam3.models.Region;
 import org.springframework.data.repository.CrudRepository;
 
 public interface RegionRepository extends CrudRepository<Region, Long> {
-    Region findRegionById(Long location);
+    Region findRegionById(Long id);
 
 }

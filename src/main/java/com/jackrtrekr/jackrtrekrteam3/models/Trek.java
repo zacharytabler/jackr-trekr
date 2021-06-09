@@ -20,8 +20,6 @@ public class Trek {
     private Region region;
     @ManyToOne
     private Type type;
-    @OneToMany
-    private Collection<Trek> treks;
     private String packList;
     private String length;
     private String reviews;
@@ -61,8 +59,6 @@ public class Trek {
     public Type getType() {
         return type;
     }
-
-    public Collection<Trek> getTreks() {return treks;}
 
     public Trek() {
 

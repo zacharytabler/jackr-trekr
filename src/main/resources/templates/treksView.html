@@ -8,6 +8,7 @@
 <h1>Treks</h1>
 <div th:each="trek: ${treksModel}">
     <p th:text=" 'Brand: ' + ${trek.name}"></p>
+    <p th:text=" 'Brand: ' + ${trek.description}"></p>
 </div>
 </body>
 </html>
