@@ -6,7 +6,8 @@
 </head>
 <body>
 <h1>Continents</h1>
-<h2 th:each="continent:${continentsModel}"> <a th:href="@{/continent(id=${continent.id})}" th:text="${continent.location}">
+<h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
+                                              th:text="${continent.location}">
     Continent </a></h2>
 </body>
 </html>

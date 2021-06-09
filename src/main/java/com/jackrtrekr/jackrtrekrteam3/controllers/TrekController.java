@@ -16,15 +16,15 @@ public class TrekController {
     @Resource
     private TrekRepository trekRepo;
 
-    @RequestMapping("/treks")
+    @RequestMapping({"/treks", "/"})
     public String displayTreks(Model model) {
         model.addAttribute("treksModel", trekRepo.findAll());
         return "treksView";
     }
 
-    @RequestMapping("/treks/{id}")
-    public String displaySingleTrek(@PathVariable Long id, Model model) {
-        Optional<Trek> retrievedTrek = trekRepo.findById(id);
+    @RequestMapping("/treks/{name}")
+    public String displaySingleTrek(@PathVariable String name, Model model) {
+        Optional<Trek> retrievedTrek = trekRepo.findByName(name);
         Trek foundTrek = retrievedTrek.get();
         model.addAttribute("trekModel", foundTrek);
         return "trekView";

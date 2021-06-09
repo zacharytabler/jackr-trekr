@@ -1,7 +1,6 @@
 package com.jackrtrekr.jackrtrekrteam3.models;
 
 import javax.persistence.*;
-import java.util.Collection;
 import java.util.Objects;
 
 
