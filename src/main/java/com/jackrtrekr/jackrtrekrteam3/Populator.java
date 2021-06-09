@@ -1,15 +1,15 @@
 package com.jackrtrekr.jackrtrekrteam3;
 
-import com.jackrtrekr.jackrtrekrteam3.models.Region;
-import com.jackrtrekr.jackrtrekrteam3.repositories.ContinentRepository;
-import com.jackrtrekr.jackrtrekrteam3.repositories.RegionRepository;
-import com.jackrtrekr.jackrtrekrteam3.repositories.TrekRepository;
-import com.jackrtrekr.jackrtrekrteam3.repositories.TypeRepository;
-import com.jackrtrekr.jackrtrekrteam3.models.Continent;
-import com.jackrtrekr.jackrtrekrteam3.models.Trek;
-import com.jackrtrekr.jackrtrekrteam3.models.Type;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import com.jackrtrekr.jackrtrekrteam3.models.Trek;
+import com.jackrtrekr.jackrtrekrteam3.models.Continent;
+import com.jackrtrekr.jackrtrekrteam3.models.Region;
+import com.jackrtrekr.jackrtrekrteam3.models.Type;
+import com.jackrtrekr.jackrtrekrteam3.repositories.TrekRepository;
+import com.jackrtrekr.jackrtrekrteam3.repositories.ContinentRepository;
+import com.jackrtrekr.jackrtrekrteam3.repositories.RegionRepository;
+import com.jackrtrekr.jackrtrekrteam3.repositories.TypeRepository;
 
 import javax.annotation.Resource;
 import javax.persistence.Lob;
@@ -21,7 +21,7 @@ public class Populator implements CommandLineRunner {
     @Resource
     private TypeRepository typeRepo;
     @Resource
-    ContinentRepository continentRepo;
+    private ContinentRepository continentRepo;
     @Resource
     private TrekRepository trekRepo;
     @Resource
@@ -58,40 +58,40 @@ public class Populator implements CommandLineRunner {
         Region greatPlains = new Region("The Great Plains");
         Region canadianShield = new Region("The Canadian Shield");
         Region variedEasternRegion = new Region("The Varied Eastern Region");
-        Region caribbean = new Region ("The Caribbean");
+        Region caribbean = new Region("The Caribbean");
         Region patagonia = new Region("Patagonia");
-        Region andesMountains = new Region ("The Andes Mountains");
+        Region andesMountains = new Region("The Andes Mountains");
         Region brazilianCoastline = new Region("The Brazilian Coastline");
-        Region amazon = new Region ("The Amazon");
-        Region pantanal = new Region ("The Pantanal");
+        Region amazon = new Region("The Amazon");
+        Region pantanal = new Region("The Pantanal");
         Region balkanPeninsula = new Region("The Balkan Peninsula");
         Region iberianPeninsula = new Region("The Iberian Peninsula");
         Region italianPeninsula = new Region("The Italian Peninsula");
         Region scandinavianPeninsula = new Region("The Scandinavian Peninsula");
         Region fennoscandianPeninsula = new Region("The Fennoscandian Peninsula");
         Region jutlandPeninsula = new Region("The Jutland Peninsula");
-        Region sahel = new Region ("The Sahel");
+        Region sahel = new Region("The Sahel");
         Region sahara = new Region("The Sahara");
-        Region ethiopianHighlands = new Region ("The Ethiopian Highlands");
-        Region savanna = new Region ("The Savanna");
-        Region swahiliCoast = new Region ("The Swahili Coast");
-        Region rainForest = new Region ("The Rain Forest");
-        Region africanGreatLakes = new Region ("The African Great Lakes");
-        Region southernAfrica = new Region ("Southern Africa");
+        Region ethiopianHighlands = new Region("The Ethiopian Highlands");
+        Region savanna = new Region("The Savanna");
+        Region swahiliCoast = new Region("The Swahili Coast");
+        Region rainForest = new Region("The Rain Forest");
+        Region africanGreatLakes = new Region("The African Great Lakes");
+        Region southernAfrica = new Region("Southern Africa");
         Region centralAsia = new Region("Central Asia");
         Region southPole = new Region("South Pole");
-        Region australianCapitalTerritory = new Region ("Australian Capital Territory");
+        Region australianCapitalTerritory = new Region("Australian Capital Territory");
         Region newSouthWales = new Region("New South Wales");
-        Region northernTerritory = new Region ("Northern Territory");
+        Region northernTerritory = new Region("Northern Territory");
         Region queensLand = new Region("Queensland");
         Region southAustralia = new Region("South Australia");
         Region tasmaniaHobart = new Region("Tasmania-Hobart");
-        Region victoriaMelbourne = new Region ("Victoria-Melbourne");
-        Region westernAustralia = new Region ("Western Australia");
-        Region southeastAsia = new Region ("Southeast Asia");
-        Region eastAsia = new Region ("East Asia");
-        Region southAsia = new Region ("South Asia");
-        Region southwestAsia = new Region ("Southwest Asia");
+        Region victoriaMelbourne = new Region("Victoria-Melbourne");
+        Region westernAustralia = new Region("Western Australia");
+        Region southeastAsia = new Region("Southeast Asia");
+        Region eastAsia = new Region("East Asia");
+        Region southAsia = new Region("South Asia");
+        Region southwestAsia = new Region("Southwest Asia");
 
         regionRepo.save(mountainousWest);
         regionRepo.save(patagonia);

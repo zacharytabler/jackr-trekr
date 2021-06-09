@@ -18,16 +18,16 @@ public class ContinentController {
     private ContinentRepository continentRepo;
 
     @RequestMapping("/continents")
-    public String displayContinents(Model model){
-        model.addAttribute("continents", continentRepo.findAll());
+    public String displayContinents(Model model) {
+        model.addAttribute("continentsModel", continentRepo.findAll());
         return "continentsView";
     }
 
-    @GetMapping("/continents/{location}")
-    public String displaySingleContinent(@PathVariable String location, Model model){
-        Continent retrievedContinent = continentRepo.findContinentByLocation(location);
-        return "continentview";
+    @GetMapping("/continents/{id}")
+    public String displaySingleContinent(@PathVariable Long id, Model model) {
+        Continent retrievedContinent = continentRepo.findContinentById(id);
+        model.addAttribute("continentModel", continentRepo.findContinentById(id));
+        return "continentView";
     }
-
 
 }

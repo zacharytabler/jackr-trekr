@@ -20,15 +20,15 @@ public class TypeController {
     private TypeRepository typeRepo;
 
     @RequestMapping("/types")
-    public String displayTypes(Model model){
-        model.addAttribute("types", typeRepo.findAll());
+    public String displayTypes(Model model) {
+        model.addAttribute("typesModel", typeRepo.findAll());
         return "typesView";
     }
 
     @GetMapping("/types/{difficulty}")
-    public String displaySingleType(@PathVariable String difficulty, Model model){
-        Type retrievedType = typeRepo.findTypeByDifficulty(difficulty);
-        model.addAttribute("type", retrievedType);
+    public String displaySingleType(@PathVariable Long id, Model model) {
+        Type retrievedType = typeRepo.findTypeById(id);
+        model.addAttribute("typeModel", retrievedType);
         return "typeView";
     }
 

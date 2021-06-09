@@ -25,7 +25,7 @@ public class Type {
         return difficulty;
     }
 
-    public Collection<Trek> getTreks(){
+    public Collection<Trek> getTreks() {
         return treks;
     }
 

@@ -1,6 +1,7 @@
 package com.jackrtrekr.jackrtrekrteam3.models;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
 
@@ -13,12 +14,14 @@ public class Trek {
     private String name;
     @Lob
     private String description;
-   @ManyToOne
+    @ManyToOne
     private Continent continent;
-   @ManyToOne
-   private Region region;
+    @ManyToOne
+    private Region region;
     @ManyToOne
     private Type type;
+    @OneToMany
+    private Collection<Trek> treks;
     private String packList;
     private String length;
     private String reviews;
@@ -51,11 +54,15 @@ public class Trek {
         return continent;
     }
 
-    public Region getRegion() {return region;}
+    public Region getRegion() {
+        return region;
+    }
 
     public Type getType() {
         return type;
     }
+
+    public Collection<Trek> getTreks() {return treks;}
 
     public Trek() {
 

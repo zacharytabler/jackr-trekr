@@ -1,6 +1,7 @@
 package com.jackrtrekr.jackrtrekrteam3.models;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
 @Entity
@@ -12,20 +13,26 @@ public class Region {
     private String location;
     @ManyToOne
     private Continent continent;
+    @OneToMany(mappedBy = "region")
+    public Collection<Trek> treks;
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
-    public String getLocation(){
+    public String getLocation() {
         return location;
+    }
+
+    public Collection<Trek> getTreks() {
+        return treks;
     }
 
     public Region() {
 
     }
 
-    public Region (String location){
+    public Region(String location) {
         this.location = location;
     }
 

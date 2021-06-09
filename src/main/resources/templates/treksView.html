@@ -6,5 +6,8 @@
 </head>
 <body>
 <h1>Treks</h1>
+<div th:each="trek: ${treksModel}">
+    <p th:text=" 'Brand: ' + ${trek.name}"></p>
+</div>
 </body>
 </html>
