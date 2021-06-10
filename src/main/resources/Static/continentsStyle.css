@@ -1,12 +1,14 @@
 main{
   margin: 0 auto;
-  max-width: 1050px;
+  max-width: 1200px;
   text-align: center;
-  background: green;
+  background: #229b22;
 }
-
+h1{
+margin: 1.5em;
+padding-top: 1em;
+}
 .section {
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1.5em;
 }

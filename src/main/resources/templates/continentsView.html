@@ -6,11 +6,29 @@
     <title>Continents</title>
 </head>
 <body>
+<header class="header">
+    <h1 class="header__title">JacKr TreKr</h1>
+    <nav class="header__nav">
+        <ul class="header__nav_list">
+            <li class="header__nav_listItem"><a href="#">Continents</a></li>
+            <li class="header__nav_listItem"><a href="#">Regions</a></li>
+            <li class="header__nav_listItem"><a href="#">Treks</a></li>
+            <li class="header__nav_listItem"><a href="#">Difficulty</a></li>
+            <li class="header__nav_listItem"><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</header>
 <main>
 <h1>Continents</h1>
 <h2 class="section" th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
                                               th:text="${continent.location}">
     Continent </a></h2>
 </main>
+<footer class="footer">
+    <a href="#"><img src="" alt="" class="footer__facebook_image"></a>
+    <a href="#"><img src="" alt="" class="footer__twitter_image"></a>
+    <a href="#"><img src="" alt="" class="footer__instagram_image"></a>
+    <small class="copyright">&copy JacKr Enterprises 2021</small>
+</footer>
 </body>
 </html>
