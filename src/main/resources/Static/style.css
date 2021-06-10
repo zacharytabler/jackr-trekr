@@ -1,36 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?famil=lato');
 
-.about-section{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        border: 1px solid #000;
-        border-radius: 3px;
-        color: black;
-        padding: 15px 0;
-        width: 100%;
-        text-transform: upp5ercase;
-        font-weight: 700;
+* {
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.618em;
+  }
+
+  h2{
+      margin-top: 0px;
+      font-weight: 800;
+  }
+  
+  html{
+    background-image: linear-gradient(to right top, #d3dacb, #c1caaf, #b1ba92, #a4a975, #989858);
+  }
+
+.container { 
+    background: gray;
+    border: 5px solid grey;
+    border-radius: 25px;
+    padding: 100px;
+    margin: 100px;
+    width: 10em;
 }
 
-.row {
-    color:black;
-    padding: 15px 0;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 700;
+p{
+  font-weight: bold;
+  align-content: center;
+  margin-bottom: 120px;
 }
 
-.column{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+.profiles{
+  height: -10em;
+  display: flex;
+  align-content: center;
 }
 
-.card {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-}
