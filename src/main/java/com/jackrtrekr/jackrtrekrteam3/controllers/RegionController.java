@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import java.util.Optional;
 
 @Controller
 public class RegionController {
@@ -24,9 +25,9 @@ public class RegionController {
 
     @GetMapping("/regions/{location}")
     public String displaySingleRegion(@PathVariable String location, Model model) {
-        Region retrievedRegion = regionRepo.findRegionByLocation(location);
-        model.addAttribute("regionModel", retrievedRegion);
+        Optional<Region> retrievedRegion = regionRepo.findRegionByLocation(location);
+        Region foundRegion = retrievedRegion.get();
+        model.addAttribute("regionModel", foundRegion);
         return "regionView";
     }
-
 }
