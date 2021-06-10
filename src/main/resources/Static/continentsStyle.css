@@ -1,0 +1,12 @@
+main{
+  margin: 0 auto;
+  max-width: 1050px;
+  text-align: center;
+  background: green;
+}
+
+.section {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
