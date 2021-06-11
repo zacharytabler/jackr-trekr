@@ -115,18 +115,6 @@ a {
     top: 0;
 }
 
-.footer {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-}
-
-.footer__social_image {
-    height: auto;
-    width: 25px;
-}
-
 @media (min-width: 48em) {
 
     .header__nav_listItem {
