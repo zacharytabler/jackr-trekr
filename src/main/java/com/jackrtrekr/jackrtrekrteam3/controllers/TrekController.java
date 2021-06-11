@@ -16,7 +16,7 @@ public class TrekController {
     @Resource
     private TrekRepository trekRepo;
 
-    @RequestMapping({"/treks", "/"})
+    @RequestMapping("/treks")
     public String displayTreks(Model model) {
         model.addAttribute("treksModel", trekRepo.findAll());
         return "treksView";
