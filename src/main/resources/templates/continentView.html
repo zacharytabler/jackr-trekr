@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="${continentModel.location}"></title>
+    <link rel="stylesheet" href="headerfooterstyle.css">
 </head>
 <body>
 <main>
+    <h1 th:text="${continentModel.location}"></h1>
     <h2 class="" th:each="region:${continentModel.regions}" th:text="${region.location}"></h2>
 </main>
 </body>

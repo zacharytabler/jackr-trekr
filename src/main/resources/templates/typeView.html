@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title th:text="${typeModel.difficulty}"></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="headerfooterstyle.css">
 </head>
 <body>
 <main>
+    <h1 th:text="${typeModel.difficulty}"></h1>
     <h2 class="" th:each="trek:${typeModel.treks}" th:text="${trek.name}"></h2>
 </main>
 </body>
