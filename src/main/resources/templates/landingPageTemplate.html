@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="landingPageStyle.css">
     </head>
     <body>
         <div class="container">
             <header class="header">
                 <h1 class="header__title">JacKr TreKr</h1>
-                <nav class="header__nav">
-                    <ul class="header__nav_list">
-                        <li class="header__nav_listItem"><a href="#">Continents</a></li>
-                        <li class="header__nav_listItem"><a href="#">Regions</a></li>
-                        <li class="header__nav_listItem"><a href="#">Treks</a></li>
-                        <li class="header__nav_listItem"><a href="#">Difficulty</a></li>
-                        <li class="header__nav_listItem"><a href="#">About Us</a></li>
-                    </ul>
-                </nav>
+                <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
+                <label class="header__menu_icon" for="header__menu_btn"><span class="header__nav_icon"></span></label>
+                <class class="header__nav_list"></class>
+                <ul class="header__nav_list">
+                    <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
+                    <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
+                    <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
+                    <li class="header__nav_listItem"><a href="/types">Difficulty</a></li>
+                    <li class="header__nav_listItem"><a href="#">About Us</a></li>
+                </ul>
             </header>
             <main class="main">
                 <section class="main__section_difficulty">
-                    <button class="main__button"><a href="#">Easy</a></button>
-                    <button class="main__button"><a href="#">Moderate</a></button>
-                    <button class="main__button"><a href="#">Strenuous</a></button>
-                    <button class="main__button"><a href="#">Difficult</a></button>
+                    <button class="main__button_type" th:text="${type.difficulty}"><a th:href="@{/type(id=${type.id})}"></a></button>
                 </section>
                 <section class="main__section_worldMap">
-                    <img src="" alt="" class="main__worldMap_Image">
+                    <button class="main__button_continent" th:text="${continent.location}"><a th:href="@{/continent(id=${continent.id})}"></a></button>
                 </section>
             </main>
             <footer class="footer">
