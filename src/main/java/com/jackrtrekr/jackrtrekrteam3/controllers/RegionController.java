@@ -16,7 +16,7 @@ public class RegionController {
     @Resource
     private RegionRepository regionRepo;
 
-    @RequestMapping({"/regions", "/"})
+    @RequestMapping("/regions")
     public String displayRegions(Model model) {
         model.addAttribute("regionsModel", regionRepo.findAll());
         return "regionsView";
