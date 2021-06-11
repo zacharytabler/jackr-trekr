@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>JacKr TreKr</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="headerfooterstyle.css">
+        <link rel="stylesheet" href="indexStyle.css">
     </head>
     <body>
         <div class="container">
@@ -25,17 +26,23 @@
             </header>
             <main class="main">
                 <section class="main__section_difficulty">
-                    <button class="main__button_type" th:text="${type.difficulty}"><a th:href="@{/type(id=${type.id})}"></a></button>
+                    <h2 class="main__section_header">Difficulty:</h2>
+                    <button class="main__button_type" th:each="type:${typesModel}"><a th:href="@{'/types/' + ${type.difficulty}}" th:text="${type.difficulty}"></a>Difficulty</button>
                 </section>
                 <section class="main__section_worldMap">
-                    <button class="main__button_continent" th:text="${continent.location}"><a th:href="@{/continent(id=${continent.id})}"></a></button>
+                    <h2 class="main__section_header">Continents:</h2>
+                    <button class="main__button_type" th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}" th:text="${continent.location}"></a></button>
                 </section>
             </main>
             <footer class="footer">
-                <a href="#"><img src="" alt="" class="footer__facebook_image"></a>
-                <a href="#"><img src="" alt="" class="footer__twitter_image"></a>
-                <a href="#"><img src="" alt="" class="footer__instagram_image"></a>
-                <small class="copyright">&copy JacKr Enterprises 2021</small>
+                <section class="footer__section_social">
+                    <a href="#"><img src="/images/facebook.png" alt="" class="footer__image"></a>
+                    <a href="#"><img src="/images/twitter.png" alt="" class="footer__image"></a>
+                    <a href="#"><img src="/images/instagram.png" alt="" class="footer__image"></a>
+                </section>
+                <section class="footer__section_copy">
+                    <small class="copyright">&copy JacKr Enterprises 2021</small>
+                </section>
             </footer>
         </div>
     </body>

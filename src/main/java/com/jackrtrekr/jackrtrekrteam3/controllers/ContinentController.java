@@ -17,6 +17,12 @@ public class ContinentController {
     @Resource
     private ContinentRepository continentRepo;
 
+    @RequestMapping("/index")
+    public String displayAllContinents(Model model) {
+        model.addAttribute("continentsModel", continentRepo.findAll());
+        return "index";
+    }
+
     @RequestMapping("/continents")
     public String displayContinents(Model model) {
         model.addAttribute("continentsModel", continentRepo.findAll());
