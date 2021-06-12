@@ -7,17 +7,30 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" href="headerfooterstyle.css">
   </head>
   <body>
-     <h1>About Us Page</h1>
+   <div id="body">
+   <header class="header">
+      <h1 class="header__title">JacKr TreKr</h1>
+      <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
+      <label class="header__menu_icon" for="header__menu_btn"><span class="header__nav_icon"></span></label>
+      <class class="header__nav_list"></class>
+      <ul class="header__nav_list">
+          <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
+          <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
+          <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
+          <li class="header__nav_listItem"><a href="/types">Difficulty</a></li>
+          <li class="header__nav_listItem"><a href="AboutUs.html">About Us</a></li>
+      </ul>
+  </header>
      <p>You havent trekked, until you trekked with Jackr.</p>
      <br>
-     <h2>Our Team</h2>
-  <div id="body">   
+     <h2>Our Team</h2>   
   <section class="profiles">
      <br>
     <article class="container">
-      <img src="" alt="Danielle Bosworth"/>
+      <img id="images" src="" alt="Danielle Bosworth"/>
        <h2>Danielle Bosworth</h2>
        <p>CEO and Founder.</p>
        <p>lorem ipsum ipsum lorem.</p>
@@ -25,7 +38,7 @@
     </article>
     <br>
     <article class="container">
-    <img src="" alt="Nick Billhardt"/>
+    <img id="images" src="./images\NickPic.jpg" alt="Nick Billhardt"/>
        <h2>Nick Billhardt</h2>
        <p>Senior Developer</p>
        <p>lorem ipsum ipsum lorem.</p>
@@ -33,7 +46,7 @@
     </article>
     <br>
     <article class="container">
-    <img src="" alt="Zachary Tabler"/>
+    <img id="images" src="./images\ZacharyTabler.jpg" alt="Zachary Tabler"/>
        <h2>Zachary Tabler</h2>
        <p>Senior Developer</p>
        <p>lorem ipsum ipsum lorem.</p>
@@ -41,7 +54,7 @@
     </article>
     <br>
     <article class="container">
-    <img src="" alt="Ty Jackson"/>
+    <img id="images" src="" alt="Ty Jackson"/>
        <h2>Ty Jackson</h2>
        <p>Senior Developer</p>
        <p>lorem ipsum ipsum lorem.</p>
@@ -49,13 +62,24 @@
     </article>
     <br>
     <article class="container">
-    <img src="" alt="Duwe Aynab"/>
+    <img id="images" src="./images\Portfolio Photo.jpg" alt="Duwe Aynab"/>
        <h2>Duwe Aynab</h2>
        <p>Senior Developer.</p>
        <p>lorem ipsum ipsum lorem.</p>
        <p>DuweAynab@JackrTrekr.com</p>
     </article>
   </section>
-</div> 
+  <footer class="footer">
+   <section class="footer__section_social">
+       <a href="#"><img src="/images/facebook.png" alt="" class="footer__image"></a>
+       <a href="#"><img src="/images/twitter.png" alt="" class="footer__image"></a>
+       <a href="#"><img src="/images/instagram.png" alt="" class="footer__image"></a>
+   </section>
+   <section class="footer__section_copy">
+       <small class="copyright">&copy JacKr Enterprises 2021</small>
+   </section>
+</footer>
+
+ </div>
  </body>
 </html>

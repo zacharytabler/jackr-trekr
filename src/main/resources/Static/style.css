@@ -5,16 +5,7 @@
     line-height: 1.618em;
   }
 
-  h2{
-      margin-top: 0px;
-      font-weight: 800;
-  }
-  
-  html{
-    background-image: linear-gradient(to right top, #d3dacb, #c1caaf, #b1ba92, #a4a975, #989858);
-  }
-
-.container { 
+  .container { 
     background: gray;
     border: 5px solid grey;
     border-radius: 25px;
@@ -22,6 +13,25 @@
     margin: 100px;
     width: 10em;
 }
+
+  h2{
+      margin-top: 0px;
+      font-weight: 800;
+  }
+  
+
+  #images{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  }
+
+
+  html{
+    background-image: linear-gradient(to right top, #d3dacb, #c1caaf, #b1ba92, #a4a975, #989858);
+  }
+
 
 p{
   font-weight: bold;
