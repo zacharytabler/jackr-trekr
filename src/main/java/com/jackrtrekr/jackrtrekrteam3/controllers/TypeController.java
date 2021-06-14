@@ -19,6 +19,7 @@ public class TypeController {
     @Resource
     private TypeRepository typeRepo;
 
+
     @RequestMapping("/types")
     public String displayTypes(Model model) {
         model.addAttribute("typesModel", typeRepo.findAll());

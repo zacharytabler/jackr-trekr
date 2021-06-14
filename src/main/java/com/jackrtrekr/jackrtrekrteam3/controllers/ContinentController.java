@@ -28,7 +28,7 @@ public class ContinentController {
         model.addAttribute("continentsModel", continentRepo.findAll());
         return "continentsView";
     }
-
+    
     @GetMapping("/continents/{location}")
     public String displaySingleContinent(@PathVariable String location, Model model) {
         Continent retrievedContinent = continentRepo.findContinentByLocation(location);
