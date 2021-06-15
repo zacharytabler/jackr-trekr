@@ -20,7 +20,7 @@ public class ContinentController {
     @Resource
     private TypeRepository typeRepo;
 
-    @RequestMapping("/index")
+    @RequestMapping({"/index", "/", ""})
     public String displayAllContinents(Model model) {
         model.addAttribute("continentsModel", continentRepo.findAll());
         model.addAttribute("typesModel", typeRepo.findAll());

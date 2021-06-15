@@ -8,7 +8,7 @@
 <body>
 <main>
     <h1 th:text="${typeModel.difficulty}"></h1>
-    <h2 class="" th:each="trek:${typeModel.treks}" th:text="${trek.name}"></h2>
+    <h2 class="" th:each="trek:${typeModel.treks}"> <a th:href="@{'/treks/' + ${trek.name}}"th:text="${trek.name}"></a></h2>
     <h4><a href="/typesoftreks.html">Click Here To Learn More About Your Selected Difficulty Level</a></h4>
 </main>
 </body>

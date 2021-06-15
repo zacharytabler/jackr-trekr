@@ -6,9 +6,32 @@
     <title th:text="${continentModel.location}"></title>
 </head>
 <body>
+<header class="header">
+    <h1 class="header__title">JacKr TreKr</h1>
+    <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
+    <label class="header__menu_icon" for="header__menu_btn"><span class="header__nav_icon"></span></label>
+    <class class="header__nav_list"></class>
+    <ul class="header__nav_list">
+        <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
+        <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
+        <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
+        <li class="header__nav_listItem"><a href="/types">Difficulty</a></li>
+        <li class="header__nav_listItem"><a href="AboutUs.html">About Us</a></li>
+    </ul>
+</header>
 <main>
     <h1 th:text="${continentModel.location}"></h1>
-    <h2 class="" th:each="region:${continentModel.regions}" th:text="${region.location}"></h2>
+    <h2 class="" th:each="region:${continentModel.regions}"><a th:href="@{'/regions/' + ${region.location}}" th:text="${region.location}"></a></h2>
 </main>
+<footer class="footer">
+    <section class="footer__section_social">
+        <a href="#"><img src="/images/facebook.png" alt="" class="footer__image"></a>
+        <a href="#"><img src="/images/twitter.png" alt="" class="footer__image"></a>
+        <a href="#"><img src="/images/instagram.png" alt="" class="footer__image"></a>
+    </section>
+    <section class="footer__section_copy">
+        <small class="copyright">&copy JacKr Enterprises 2021</small>
+    </section>
+</footer>
 </body>
 </html>
