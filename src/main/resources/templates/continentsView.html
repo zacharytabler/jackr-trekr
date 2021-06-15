@@ -20,7 +20,7 @@
     </nav>
 </header>
 <main>
-<h1>Continents</h1>
+<h2>Continents</h2>
 <h2 class="section" th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
                                               th:text="${continent.location}">
     Continent </a></h2>
