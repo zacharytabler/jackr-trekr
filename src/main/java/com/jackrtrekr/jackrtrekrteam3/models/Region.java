@@ -1,6 +1,8 @@
 package com.jackrtrekr.jackrtrekrteam3.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -24,6 +26,10 @@ public class Region {
         return location;
     }
 
+    public Continent getContinent() {
+        return continent;
+    }
+
     public Collection<Trek> getTreks() {
         return treks;
     }
@@ -32,8 +38,10 @@ public class Region {
 
     }
 
-    public Region(String location) {
+    public Region(String location, Continent continent, Trek... treks) {
         this.location = location;
+        this.continent = continent;
+        this.treks = new ArrayList<>((Arrays.asList(treks)));
     }
 
     @Override

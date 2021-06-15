@@ -2,31 +2,36 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="continentsStyle.css"/>
+    <link rel="stylesheet" href="headerfooterstyle.css">
     <title>Regions</title>
 </head>
 <body>
 <header class="header">
     <h1 class="header__title">JacKr TreKr</h1>
-    <nav class="header__nav">
-        <ul class="header__nav_list">
-            <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
-            <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
-            <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
-            <li class="header__nav_listItem"><a href="/types">Difficulty</a></li>
-            <li class="header__nav_listItem"><a href="/AboutUs.html">About Us</a></li>
-        </ul>
-    </nav>
+    <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
+    <label class="header__menu_icon" for="header__menu_btn"><span class="header__nav_icon"></span></label>
+    <class class="header__nav_list"></class>
+    <ul class="header__nav_list">
+        <li class="header__nav_listItem"><a href="/continents">Continents</a></li>
+        <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
+        <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
+        <li class="header__nav_listItem"><a href="/types">Difficulty</a></li>
+        <li class="header__nav_listItem"><a href="AboutUs.html">About Us</a></li>
+    </ul>
 </header>
 <main>
-    <h2 class="section" th:each="region:${regionsModel}"><a th:href="@{'/regions/' + ${region.location}}" th:text="${region.location}">
-        Regions</a></h2>
+    <h2 th:each="region:${regionsModel}"><a th:href="@{'/regions/' + ${region.location}}" th:text="${region.location}">
+        </a></h2>
 </main>
 <footer class="footer">
-    <a href="#"><img src="" alt="" class="footer__facebook_image"></a>
-    <a href="#"><img src="" alt="" class="footer__twitter_image"></a>
-    <a href="#"><img src="" alt="" class="footer__instagram_image"></a>
-    <small class="copyright">&copy JacKr Enterprises 2021</small>
+    <section class="footer__section_social">
+        <a href="#"><img src="/images/facebook.png" alt="" class="footer__image"></a>
+        <a href="#"><img src="/images/twitter.png" alt="" class="footer__image"></a>
+        <a href="#"><img src="/images/instagram.png" alt="" class="footer__image"></a>
+    </section>
+    <section class="footer__section_copy">
+        <small class="copyright">&copy JacKr Enterprises 2021</small>
+    </section>
 </footer>
 </body>
 </html>

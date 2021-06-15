@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -14,9 +16,9 @@ public class Continent {
     @GeneratedValue
     private Long id;
     private String location;
-    @OneToMany(mappedBy = "continent")
-    private Collection<Trek> treks;
 
+    @OneToMany(mappedBy = "continent")
+    private Collection<Region> regions;
 
     public Long getId() {
         return id;
@@ -26,16 +28,17 @@ public class Continent {
         return location;
     }
 
-    public Collection<Trek> getTreks() {
-        return treks;
+    public Collection<Region> getRegions() {
+        return regions;
     }
 
     public Continent() {
 
     }
 
-    public Continent(String location) {
+    public Continent(String location, Region... regions) {
         this.location = location;
+        this.regions = new ArrayList<>(Arrays.asList(regions));
     }
 
 
