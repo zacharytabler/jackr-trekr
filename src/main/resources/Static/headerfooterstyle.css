@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@font-face {
+    font-family: Norwester;
+    src: url("norwester.otf") format("opentype");
+}
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Norwester', sans-serif;
     margin: 0;
-    background-color: #bbb;
+    background-color: white;
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 .header {
-    background-color: #fff;
+    background-color: #576C31;
     -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -24,24 +27,28 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #576C31;
 }
 
 .header__nav_listItem a {
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4; /*may not want */
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
 .header__nav_listItem a:hover {
-    background-color: #f4f4f4;
+    border-bottom: solid 2px white;
 }
 
 .header__title {
+    color: white;
     display: block;
     float: left;
     font-size: 2em;
+    letter-spacing: 6px;
+
     padding: 10px 20px;
     text-decoration: none;
     text-transform: capitalize;
@@ -61,7 +68,7 @@ a {
 }
 
 .header__nav_icon {
-    background: #333;
+    background: white;
     display: block;
     height: 2px;
     position: relative;
@@ -72,7 +79,7 @@ a {
 
 .header__nav_icon:before,
 .header__nav_icon:after {
-    background: #333;
+    background: white;
     content: '';
     display: block;
     height: 100%;
@@ -120,6 +127,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
+    padding-top: 1rem;
 }
 
 .footer__image {
@@ -127,12 +135,8 @@ a {
     width: 25px;
 }
 
-.footer__section_text {
-    font-size: 16px;
-    font-style: italic;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.footer__section_copy {
+    padding-bottom: 1rem;
 }
 
 @media (min-width: 48em) {
@@ -142,7 +146,7 @@ a {
     }
 
     .header__nav_listItem a {
-        padding: 20px 30px;
+        padding: 10px 20px;
     }
 
     .header__nav_list {
@@ -153,5 +157,16 @@ a {
 
     .header__menu_icon {
         display: none;
+    }
+}
+
+@media (min-width: 836px) {
+
+    .footer__section_text {
+        font-size: 16px;
+        font-style: italic;
+        margin: 0;
+        padding: 0;
+        text-align: center;
     }
 }
