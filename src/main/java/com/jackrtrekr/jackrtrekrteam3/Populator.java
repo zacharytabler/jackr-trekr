@@ -12,6 +12,7 @@ import com.jackrtrekr.jackrtrekrteam3.repositories.RegionRepository;
 import com.jackrtrekr.jackrtrekrteam3.repositories.TypeRepository;
 
 import javax.annotation.Resource;
+import java.util.Collection;
 
 
 @Component
