@@ -2,10 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="headerfooterstyle.css">
     <title>Continents</title>
 </head>
 <body>
-<h1>Continents</h1>
+<h2>Continents</h2>
 <h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
                                               th:text="${continent.location}">
     Continent </a></h2>

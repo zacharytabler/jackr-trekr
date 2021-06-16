@@ -2,11 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/headerfooterstyle.css">
     <title th:text="${trekModel.name}"></title>
 </head>
 <body>
 <main>
-    <h1 th:text="${trekModel.name}"></h1>
+    <h2 th:text="${trekModel.name}"></h2>
+    <h2 th:text="${trekModel.description}"></h2>
+    <h2 th:text="${trekModel.continent.location}"></h2>
+    <h2 th:text="${trekModel.region.location}"></h2>
+    <h2 th:text="${trekModel.type.difficulty}"></h2>
+    <h2 th:text="${trekModel.packList}"></h2>
+    <h2 th:text="${trekModel.length}"></h2>
+    <h2 th:text="${trekModel.reviews}"></h2>
 </main>
 </body>
 </html>
