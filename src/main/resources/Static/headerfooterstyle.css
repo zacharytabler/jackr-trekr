@@ -127,6 +127,14 @@ a {
     width: 25px;
 }
 
+.footer__section_text {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 @media (min-width: 48em) {
 
     .header__nav_listItem {

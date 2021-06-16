@@ -41,10 +41,10 @@ public class Populator implements CommandLineRunner {
         Continent northAmerica = new Continent("North America", "/images/northamericacontimage.jpg");
         Continent southAmerica = new Continent("South America", "images/southamericacontimage.jpg");
         Continent africa = new Continent("Africa", "/images/africacontimage.jpg");
-        Continent asia = new Continent("Asia","/images/africacontimage.jpg");
-        Continent europe = new Continent("Europe", "/images/africacontimage.jpg");
-        Continent antarctica = new Continent("Antarctica", "/images/africacontimage.jpg");
-        Continent australia = new Continent("Australia", "/images/africacontimage.jpg");
+        Continent asia = new Continent("Asia","/images/asiacontimage.jpg");
+        Continent europe = new Continent("Europe", "/images/europecontimage.jpg");
+        Continent antarctica = new Continent("Antarctica", "/images/antarcticacontimage.jpg");
+        Continent australia = new Continent("Australia", "/images/australiacontimage.jpg");
         continentRepo.save(northAmerica);
         continentRepo.save(southAmerica);
         continentRepo.save(africa);
