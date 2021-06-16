@@ -141,25 +141,25 @@ public class Populator implements CommandLineRunner {
         regionRepo.save(rossSea);
 
 //        Continent: Asia
-        Trek annaPurna = new Trek("Annapurna Circuit", "The Annapurna Circuit is a trek within the mountain ranges of central Nepal. The total length of the route varies between 100 and 145 miles. The highlights include reaching an altitude of almost 18,000 feet at Thorung La summit pass and watching the sun rise over towering peaks at Poon Hill.", asia, southAsia, difficult, "Annapurna Circuit Pack List", "Fifteen to Twenty Five Days", "It was great!");
+        Trek annaPurna = new Trek("Annapurna Circuit", "The Annapurna Circuit is a trek within the mountain ranges of central Nepal. The total length of the route varies between 100 and 145 miles. The highlights include reaching an altitude of almost 18,000 feet at Thorung La summit pass and watching the sun rise over towering peaks at Poon Hill.", asia, southAsia, difficult, "Annapurna Circuit Pack List", "Fifteen to Twenty Five Days");
         trekRepo.save(annaPurna);
         
-        Trek banaueRiceTerraces = new Trek("Banaue Rice Terraces", "The terraces are located approximately 4,900 feet above sea level. These are fed by an ancient irrigation system from the rainforests above the terraces.", asia, southeastAsia, easy, "Backpack, Water bottle, Walking stick, Rain jacket.","Two to Three days.", "It was fun" );
+        Trek banaueRiceTerraces = new Trek("Banaue Rice Terraces", "The terraces are located approximately 4,900 feet above sea level. These are fed by an ancient irrigation system from the rainforests above the terraces.", asia, southeastAsia, easy, "Backpack, Water bottle, Walking stick, Rain jacket.","Two to Three days.");
         trekRepo.save(banaueRiceTerraces);
         
-        Trek kumanoKodo = new Trek("Kumano Kodo", "The Kumano Kodo has various routes, with most people spending 2-4 days. Reaches elevated height of up to 3280 feet. The most popular is the Nakahechi route.", asia, eastAsia, easy, "Backpack, Walking Stick, Jacket, Water bottle, Sleeping bag, Head Lamp", "Two to Three days.", "This is a review.");
+        Trek kumanoKodo = new Trek("Kumano Kodo", "The Kumano Kodo has various routes, with most people spending 2-4 days. Reaches elevated height of up to 3280 feet. The most popular is the Nakahechi route.", asia, eastAsia, easy, "Backpack, Walking Stick, Jacket, Water bottle, Sleeping bag, Head Lamp", "Two to Three days.");
         trekRepo.save(kumanoKodo);
         
-        Trek mountFuji = new Trek("Mount Fuji", "Climbing Mount Fuji is a challenge and is something that all Japanese do at least once in their life. Reached heights of up to 12,400 feet makes this a challenge. The trek lasts two days and there are no straight roads, it’s all uphill, so it’s best to be prepared.", asia, eastAsia, difficult, "Backpack, Walking Stick, Cramptons, Sleeping bag, Head lamp, Waterproof climbing shoes.", "Two days.", "There was a big mountain, but I didn't see it!");
+        Trek mountFuji = new Trek("Mount Fuji", "Climbing Mount Fuji is a challenge and is something that all Japanese do at least once in their life. Reached heights of up to 12,400 feet makes this a challenge. The trek lasts two days and there are no straight roads, it’s all uphill, so it’s best to be prepared.", asia, eastAsia, difficult, "Backpack, Walking Stick, Cramptons, Sleeping bag, Head lamp, Waterproof climbing shoes.", "Two days.");
         trekRepo.save(mountFuji);
         
-        Trek shamanseerMountain = new Trek("Shamanseer Mountain", "This is a very light trail that will only take about 2-3 days to complete. Hikers will walk a total of 65 miles over. Heights will reach up to 5500 feet. The path is pretty rocky.", asia, southwestAsia, easy, "Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor", "Two to Three days.", "It is super hot!");
+        Trek shamanseerMountain = new Trek("Shamanseer Mountain", "This is a very light trail that will only take about 2-3 days to complete. Hikers will walk a total of 65 miles over. Heights will reach up to 5500 feet. The path is pretty rocky.", asia, southwestAsia, easy, "Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor", "Two to Three days.");
         trekRepo.save(shamanseerMountain);
         
-        Trek danaToPetra = new Trek("Dana to Petra Trek", "Trek for eight days through Jordan's beautiful and rugged countryside, following the 'Jordan Trail' from Dana Nature Reserve to the ancient 'Rose-Red City' of Petra, and camping Bedouin style. Enjoy a wonderful week of discovery, walking and Jordanian hospitality. This trek will reach heights of 3800 feet.", asia, southwestAsia, moderate, "Backpack, water bottle, sleeping bag, hat or visor, sunscreen.", "Eight days.", "It's hot");
+        Trek danaToPetra = new Trek("Dana to Petra Trek", "Trek for eight days through Jordan's beautiful and rugged countryside, following the 'Jordan Trail' from Dana Nature Reserve to the ancient 'Rose-Red City' of Petra, and camping Bedouin style. Enjoy a wonderful week of discovery, walking and Jordanian hospitality. This trek will reach heights of 3800 feet.", asia, southwestAsia, moderate, "Backpack, water bottle, sleeping bag, hat or visor, sunscreen.", "Eight days.");
         trekRepo.save(danaToPetra);
         
-        Trek everestBaseCamp = new Trek("Everest Base Camp", "The trek to Everest Base Camp is among the most dramatic and picturesque in the Himalaya. The scenery is varied and spectacular, the lodgings and tracks are of a very high standard. Will reach heights of 29,000 feet.", asia, southAsia, difficult, " 2 pairs of climbing boots, Cramptons, Ice Axes, Cramptoms, Backpack, Sleeping Bag, Cooking Stove, Ropes, Winter Clothing, Head Lamp.", "Tweleve days", "Its another review.");
+        Trek everestBaseCamp = new Trek("Everest Base Camp", "The trek to Everest Base Camp is among the most dramatic and picturesque in the Himalaya. The scenery is varied and spectacular, the lodgings and tracks are of a very high standard. Will reach heights of 29,000 feet.", asia, southAsia, difficult, " 2 pairs of climbing boots, Cramptons, Ice Axes, Cramptoms, Backpack, Sleeping Bag, Cooking Stove, Ropes, Winter Clothing, Head Lamp.", "Tweleve days");
         trekRepo.save(everestBaseCamp);
         
         

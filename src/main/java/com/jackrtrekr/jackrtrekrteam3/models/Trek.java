@@ -21,7 +21,7 @@ public class Trek {
     private Type type;
     private String packList;
     private String length;
-    private String reviews;
+
 
     public Long getId() {
         return id;
@@ -43,10 +43,6 @@ public class Trek {
         return length;
     }
 
-    public String getReviews() {
-        return reviews;
-    }
-
     public Continent getContinent() {
         return continent;
     }
@@ -63,7 +59,7 @@ public class Trek {
 
     }
 
-    public Trek(String name, String description, Continent continent, Region region, Type type, String packList, String length, String reviews) {
+    public Trek(String name, String description, Continent continent, Region region, Type type, String packList, String length) {
         this.name = name;
         this.description = description;
         this.continent = continent;
@@ -71,7 +67,6 @@ public class Trek {
         this.type = type;
         this.packList = packList;
         this.length = length;
-        this.reviews = reviews;
     }
 
     @Override

@@ -11,13 +11,13 @@ html {
 }
 
 body {
-  background-image: linear-gradient((to right top, #877e83, #938c92, #a09ba2, #acaab1, #b9b9c0, #bcbec5, #c0c4ca, #c4c9ce, #bec6ca, #b9c3c6, #b4bfc1, #afbcbc););
-  background-position: 0 1000px;
-  background-position: center;
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: white;
 }
 
 .container {
+background: #ece3d3;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 3rem;
@@ -26,12 +26,14 @@ body {
 }
 
 .title {
+  background: #ece3d3;
   color: black;
   font-size: 7rem;
   font-weight: 700;
   letter-spacing: 7px;
   margin-bottom: 2rem;
   padding-top: 10rem;
+  padding-bottom: .5em;
   text-align: center;
 }
 
@@ -42,22 +44,28 @@ h2 {
   padding: auto;
 }
 
+img {
+  height: 250px;
+  width: 250px;
+}
+
 .imgs {
-  margin-top: 5rem;
-  margin-bottom: 2.5rem;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
 }
 
 p {
   font-size: 2rem;
   color:black;
   line-height: 2.5rem;
-  margin-bottom: 2.5rem;
-
+  margin-bottom: 2rem;
 }
 
 .button {
   display: inline-block;
-  padding: 2rem;
+  padding: 1rem;
   background: #f6f6f6;
   font-size: 2rem;
   text-decoration: none;

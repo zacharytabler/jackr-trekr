@@ -3,15 +3,15 @@
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
-    background-color: #bbb;
+    background-color: white;
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 .header {
-    background-color: #fff;
+    background-color: #576C31;
     -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -24,7 +24,7 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #576C31;
 }
 
 .header__nav_listItem a {
@@ -125,6 +125,14 @@ a {
 .footer__image {
     height: auto;
     width: 25px;
+}
+
+.footer__section_text {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 @media (min-width: 48em) {
