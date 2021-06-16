@@ -29,9 +29,47 @@
                     <h2 class="main__section_header">Difficulty:</h2>
                     <button class="main__button_type" th:each="type:${typesModel}"><a th:href="@{'/types/' + ${type.difficulty}}" th:text="${type.difficulty}"></a>Difficulty</button>
                 </section>
-                <section class="main__section_worldMap">
+                <section class="main__section_continents">
                     <h2 class="main__section_header">Continents:</h2>
                     <button class="main__button_type" th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}" th:text="${continent.location}"></a></button>
+                </section>
+                <section class="main__section_map">
+                    <article class="main__map_column">
+                        <img src="/images/north-america.jpg" alt="North America" class="map_image">
+                        <input type="button" class="main__column_button" value="North America">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/europe.jpg" alt="Europe" class="map_image">
+                        <input type="button" class="main__column_button" value="Europe">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/asia.jpg" alt="Asia" class="map_image">
+                        <input type="button" class="main__column_button" value="Asia">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/south-america.jpg" alt="South America" class="map_image">
+                        <input type="button" class="main__column_button" value="South America">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/africa.jpg" alt="Africa" class="map_image">
+                        <input type="button" class="main__column_button" value="Africa">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/oceania.jpg" alt="Oceania" class="map_image">
+                        <input type="button" class="main__column_button" value="Oceania">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/antartica-left.jpg" alt="Antartica" class="map_image">
+                        <input type="button" class="main__column_button" value="Antartica">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/antartica-center.jpg" alt="Antartica" class="map_image">
+                        <input type="button" class="main__column_button" value="Antartica">
+                    </article>
+                    <article class="main__map_column">
+                        <img src="/images/antartica-right.jpg" alt="Antartica" class="map_image">
+                        <input type="button" class="main__column_button" value="Antartica">
+                    </article>
                 </section>
             </main>
             <footer class="footer">
