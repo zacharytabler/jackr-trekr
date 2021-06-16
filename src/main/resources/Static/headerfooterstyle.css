@@ -139,7 +139,7 @@ a {
     padding-bottom: 1rem;
 }
 
-@media (min-width: 836px) {
+@media (min-width: 48em) {
 
     .header__nav_listItem {
         float: left;
@@ -157,5 +157,16 @@ a {
 
     .header__menu_icon {
         display: none;
+    }
+}
+
+@media (min-width: 836px) {
+
+    .footer__section_text {
+        font-size: 16px;
+        font-style: italic;
+        margin: 0;
+        padding: 0;
+        text-align: center;
     }
 }

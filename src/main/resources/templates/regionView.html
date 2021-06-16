@@ -2,11 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/headerfooterstyle.css">
     <title th:text="${regionModel.location}"></title>
 </head>
 <body>
 <main>
-    <h2 class="Regions" th:each="trek:${regionModel.treks}" th:text="${trek.name}"></h2>
+    <h2 th:text="${regionModel.location}"></h2>
+    <h2 class="" th:each="trek:${regionModel.treks}"><a th:href="@{'/treks/' + ${trek.name}}" th:text="${trek.name}"></a></h2>
 </main>
 </body>
 </html>
