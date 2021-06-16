@@ -7,7 +7,7 @@
 </head>
 <body>
 <main>
-    <h1 th:text="${regionModel.location}"></h1>
+    <h2 th:text="${regionModel.location}"></h2>
     <h2 class="" th:each="trek:${regionModel.treks}"><a th:href="@{'/treks/' + ${trek.name}}" th:text="${trek.name}"></a></h2>
 </main>
 </body>
