@@ -127,11 +127,16 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
+    padding-top: 1rem;
 }
 
 .footer__image {
     height: auto;
     width: 25px;
+}
+
+.footer__section_copy {
+    padding-bottom: 1rem;
 }
 
 @media (min-width: 836px) {
