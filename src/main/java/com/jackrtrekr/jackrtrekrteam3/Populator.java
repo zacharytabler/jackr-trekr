@@ -38,13 +38,13 @@ public class Populator implements CommandLineRunner {
         typeRepo.save(strenuous);
         typeRepo.save(difficult);
 
-        Continent northAmerica = new Continent("North America");
-        Continent southAmerica = new Continent("South America");
-        Continent africa = new Continent("Africa");
-        Continent asia = new Continent("Asia");
-        Continent europe = new Continent("Europe");
-        Continent antarctica = new Continent("Antarctica");
-        Continent australia = new Continent("Australia");
+        Continent northAmerica = new Continent("North America", "/images/northamericacontimage.jpg");
+        Continent southAmerica = new Continent("South America", "images/southamericacontimage.jpg");
+        Continent africa = new Continent("Africa", "/images/africacontimage.jpg");
+        Continent asia = new Continent("Asia","/images/africacontimage.jpg");
+        Continent europe = new Continent("Europe", "/images/africacontimage.jpg");
+        Continent antarctica = new Continent("Antarctica", "/images/africacontimage.jpg");
+        Continent australia = new Continent("Australia", "/images/africacontimage.jpg");
         continentRepo.save(northAmerica);
         continentRepo.save(southAmerica);
         continentRepo.save(africa);
@@ -69,6 +69,7 @@ public class Populator implements CommandLineRunner {
         Region scandinavianPeninsula = new Region("The Scandinavian Peninsula", europe);
         Region fennoscandianPeninsula = new Region("The Fennoscandian Peninsula", europe);
         Region jutlandPeninsula = new Region("The Jutland Peninsula", europe);
+        Region france   = new Region("France", europe);
         Region sahel = new Region("The Sahel", africa);
         Region sahara = new Region("The Sahara", africa);
         Region ethiopianHighlands = new Region("The Ethiopian Highlands", africa);
@@ -117,6 +118,7 @@ public class Populator implements CommandLineRunner {
         regionRepo.save(scandinavianPeninsula);
         regionRepo.save(fennoscandianPeninsula);
         regionRepo.save(jutlandPeninsula);
+        regionRepo.save(france);
         regionRepo.save(sahara);
         regionRepo.save(sahel);
         regionRepo.save(ethiopianHighlands);
@@ -161,8 +163,75 @@ public class Populator implements CommandLineRunner {
         
         Trek everestBaseCamp = new Trek("Everest Base Camp", "The trek to Everest Base Camp is among the most dramatic and picturesque in the Himalaya. The scenery is varied and spectacular, the lodgings and tracks are of a very high standard. Will reach heights of 29,000 feet.", asia, southAsia, difficult, " 2 pairs of climbing boots, Cramptons, Ice Axes, Cramptoms, Backpack, Sleeping Bag, Cooking Stove, Ropes, Winter Clothing, Head Lamp.", "Tweleve days", "Its another review.");
         trekRepo.save(everestBaseCamp);
-        
-        
+
+        //      Continent:Antarctica
+        Trek theOceanEndeavour = new Trek("The Ocean Endeavour", "Explore the natural environment and closeup encounters with wildlife on our forward-facing zodiac’s and on foot.", antarctica, southPole, difficult, "Raft, Water bottle, Food, Head Lamp", "Eleven days", "Very fun, 11 days in the ocean!");
+        trekRepo.save(theOceanEndeavour);
+
+        //      Continent: Africa
+        Trek mountKilimanjaro = new Trek ("Mount Kilimanjaro", "The highest mountain in Africa—rising to 5,895 more than 19,000 feet in elevation.", africa, savanna, moderate, "Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor","Three to Five days", "Its hot.");
+        trekRepo.save(mountKilimanjaro);
+
+        Trek maasaiMara = new Trek("Maasai Mara.", "The Maasai Mara offers several cross-counrty tours. It is all across flat lands.", africa, southernAfrica, moderate,"Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor", "Five to seven days", "Wonder scenery!");
+        trekRepo.save(maasaiMara);
+
+        Trek blydeRiverCanyon = new Trek("Blyde River Canyon", "This lush valley is the third-largest canyon in the world, and is marked by a clear, blue river cutting through sheer stone drop-offs 800 meters high.", africa, southernAfrica, strenuous, "Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor, Hunting Knife", "Twenty Days", "It was a long trip");
+        trekRepo.save(blydeRiverCanyon);
+
+        Trek danakilDepression = new Trek("Danakil Depression", "The Danakil Depression is one of the most inhospitable places on the planet, and yet life flourishes here. The Afar people thrive here.", africa, ethiopianHighlands, moderate, "Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor, Head Lamp", "One day and One Night", "Fun time!");
+        trekRepo.save(danakilDepression);
+
+        Trek livingstonia = new Trek("Livingstonia", "Livingstonia is 900 meters above the lake and is accessible by either driving up hairpin African dirt roads or hiking from Khondowe.", africa, africanGreatLakes, easy, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor", "One day","Quick and easy!");
+        trekRepo.save(livingstonia);
+
+
+//      Continent:Australia
+        Trek larapintaTrail = new Trek("Larapinta Trail", "One-way walk; good road access along track, including at ends", australia, northernTerritory, difficult, "Backpack, Walking Stick, Sleeping bag, Head lamp, Waterproof climbing shoes, Hat or visor, sunscreen.", "Eleven to fifteen days.","It was hot, it sucked!");
+        trekRepo.save(larapintaTrail);
+
+        Trek fraserIslandGreatWalk = new Trek("Fraser Island Great Walk", "One is a spectacular World Heritage area, with pristine lakes, rare rainforests growing on sand.", australia, tasmaniaHobart, easy,"Backpack, Walking Stick, Sleeping bag, Hat or visor, sunscreen.", "Three to five days", "I got lost, but then found my guide!");
+        trekRepo.save(fraserIslandGreatWalk);
+
+        Trek wildernessCoastWalk = new Trek("Wilderness Coast Walk", " One-way; boat transport required at one end, road access at other", australia, victoriaMelbourne, moderate, "Five to seven days", "Backpack, Walking Stick, Sleeping bag, Head lamp, Waterproof climbing shoes, Hat or visor, sunscreen.", "Once in a lifetime experience!");
+        trekRepo.save(wildernessCoastWalk);
+
+
+//      Continent: Europe
+        Trek tourDeMontBlanc = new Trek("Tour De Mont Blanc", " This mother of all treks circumnavigates the mighty slopes of the highest mountain in the Alps", europe,france, difficult,"Backpack, Walking Stick, Sleeping bag, Head lamp, Waterproof climbing shoes.","ten to fifteen days","Once in a lifetime adventure");
+        trekRepo.save(tourDeMontBlanc);
+
+        Trek norwegianFjords = new Trek("Norwegian Fjords", "Take the family on treks over blue glaciers, viewing mountains that come straight up from the narrow fjords.",europe, northernTerritory, easy, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor","One day", "Fun for the whole family!");
+        trekRepo.save(norwegianFjords);
+
+        Trek tourDeMonteRosa = new Trek("Tour De Monte Rosa", "The trek around this 15710 foot mountain is stunning - and it is not easy. Every day there are steep ascents and descents over ice and rock.", europe, italianPeninsula, difficult,"Backpack, Walking Stick, Sleeping bag, Head lamp, Waterproof climbing shoes.", "Eleven to fifteen days", "Hardest thing I have ever done!");
+        trekRepo.save(tourDeMonteRosa);
+
+        Trek canaryIslands = new Trek("Canary Islands", "Enerife boasts the world’s 3rd highest volcano, pine forests, ravines and coastal paths.", europe, iberianPeninsula, easy, "Backpack, Walking Stick, Sleeping bag, Head lamp, Waterproof climbing shoes.", "Two to three days.", "Its was awesome!");
+        trekRepo.save(canaryIslands);
+
+
+//      Continent: South America
+        Trek chapadaDiamantinaNationalPark = new Trek("Chapada Diamantina National Park", "One of the most beautiful National Parks in Brazil, Chapada Diamantina is located in Bahia in northeast Brazil", southAmerica, brazilianCoastline, moderate, "Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor", "Two to five days", "It was wonderful!");
+        trekRepo.save(chapadaDiamantinaNationalPark);
+
+        Trek theIncaTrail = new Trek("The Inca Trail", "When you think of trekking in South America, you think of the Inca Trail", southAmerica, brazilianCoastline, moderate, "Water Bottle, Sleeping bag or tent, Sunglasses, Sunscreen, Hat or Visor", "Three to five days", "Once in a lifetime chance to see these sites!");
+        trekRepo.save(theIncaTrail);
+
+        Trek theLostCity = new Trek("The Lost City", "Colombia’s Inca Trail, the Lost City trek is the country’s best multi-day trekking option.", southAmerica, amazon, moderate, "Water Bottle, Sleeping bag or tent, Sunglasses, Sunscreen, Hat or Visor.", "Three to Five days", "Stunning...");
+        trekRepo.save(theLostCity);
+
+
+//      Continent: North America
+        Trek yellowstone = new Trek("Yellowstone Park", "Yellowstone National Park in Wyoming, Montana and Idaho is a hiker's paradise, with approximately 1,000 miles of hiking trails across more than 2.2 million acres.", northAmerica, mountainousWest, difficult, "Five to Seven days", "Water Bottle, Sleeping bag or tent, Sunglasses, Sunscreen, Hat or Visor", "Stunning");
+        trekRepo.save(yellowstone);
+
+        Trek grandTetonNationalPark = new Trek("Grand Teton National Park", "The park, which sits in Wyoming's Jackson Hole valley, caters to every level of hiker with its more than 200 miles of trails", northAmerica, greatPlains, moderate,"Water Bottle, Sleeping bag or tent, Sunglasses, Sunscreen, Hat or Visor", "One to five days", "Offers single or multi-day hikes!");
+        trekRepo.save(grandTetonNationalPark);
+
+        Trek theAppalachianTrail = new Trek("The Appalachian Trail", "The Appalachian Trail is a 2,180+ mile long public footpath that traverses the scenic, wooded, pastoral, wild, and culturally resonant lands of the Appalachian Mountains.", northAmerica, variedEasternRegion, strenuous, "Water Bottle, Sleeping bag, Sunglasses, Sunscreen, Hat or Visor, Hunting Knife, Firearm.", "One to three months", "The hardest thing I have done ever!");
+        trekRepo.save(theAppalachianTrail);
+
+
 
     }
 
