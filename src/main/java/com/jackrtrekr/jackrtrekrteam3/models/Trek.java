@@ -11,6 +11,7 @@ public class Trek {
     @GeneratedValue
     private Long id;
     private String name;
+    private String trekImage;
     @Lob
     private String description;
     @ManyToOne
@@ -29,6 +30,8 @@ public class Trek {
     public String getName() {
         return name;
     }
+
+    public String getTrekImage() {return trekImage; }
 
     public String getDescription() {
         return description;
@@ -58,8 +61,9 @@ public class Trek {
 
     }
 
-    public Trek(String name, String description, Continent continent, Region region, Type type, String packList, String length) {
+    public Trek(String name, String trekImage, String description, Continent continent, Region region, Type type, String packList, String length) {
         this.name = name;
+        this.trekImage = trekImage;
         this.description = description;
         this.continent = continent;
         this.region = region;

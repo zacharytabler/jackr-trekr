@@ -6,12 +6,8 @@
     <title>Continents</title>
 </head>
 <body>
-<<<<<<< HEAD
-<h1>Continents</h1>
-
-=======
 <h2>Continents</h2>
->>>>>>> 4cbc22fd2ba9df551a6f1418322b9d6c7172e8ce
+
 <h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
                                               th:text="${continent.location}"></a><img th:src="${continent.contImage}"></h2>
 </body>
