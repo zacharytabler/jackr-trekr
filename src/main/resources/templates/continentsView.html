@@ -23,7 +23,7 @@
 <h2>Continents</h2>
 
 <h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
-                                              th:text="${continent.location}">
+                                              th:text="${continent.location}" ></a><img th:src="${continent.contImage}"></h2>
     Continent </a></h2>
 </main>
 <footer class="footer">
@@ -37,6 +37,5 @@
         <small class="copyright">&copy JacKr Enterprises 2021</small>
     </section>
 </footer>
-                                              th:text="${continent.location}"></a><img th:src="${continent.contImage}"></h2>
 </body>
 </html>
