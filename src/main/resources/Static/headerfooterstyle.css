@@ -3,20 +3,15 @@
     src: url("norwester.otf") format("opentype");
 }
 
-body {
-    font-family: 'Norwester', sans-serif;
-    margin: 0;
-    background-color: white;
-}
-
-a {
-    color: black;
+header a {
+    color: white;
 }
 
 .header {
     background-color: #576C31;
     -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    font-family: 'Norwester', sans-serif;
     position: fixed;
     width: 100%;
     z-index: 3;
