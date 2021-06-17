@@ -21,6 +21,7 @@
 </header>
 <main>
 <h2>Continents</h2>
+
 <h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
                                               th:text="${continent.location}">
     Continent </a></h2>

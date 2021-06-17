@@ -16,6 +16,7 @@ public class Continent {
     @GeneratedValue
     private Long id;
     private String location;
+    private String contImage;
 
     @OneToMany(mappedBy = "continent")
     private Collection<Region> regions;
@@ -28,6 +29,8 @@ public class Continent {
         return location;
     }
 
+    public String getContImage() {return contImage;}
+
     public Collection<Region> getRegions() {
         return regions;
     }
@@ -36,8 +39,9 @@ public class Continent {
 
     }
 
-    public Continent(String location, Region... regions) {
+    public Continent(String location, String contImage, Region... regions) {
         this.location = location;
+        this.contImage = contImage;
         this.regions = new ArrayList<>(Arrays.asList(regions));
     }
 

@@ -13,6 +13,7 @@ public class Region {
     @GeneratedValue
     private Long id;
     private String location;
+    private String regImage;
     @ManyToOne
     private Continent continent;
     @OneToMany(mappedBy = "region")

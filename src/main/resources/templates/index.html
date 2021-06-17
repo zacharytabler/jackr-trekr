@@ -26,18 +26,48 @@
             <main class="main">
                 <section class="main__section_difficulty">
                     <h2 class="main__section_header">Difficulty:</h2>
-                    <button class="main__button_type" th:each="type:${typesModel}"><a th:href="@{'/types/' + ${type.difficulty}}" th:text="${type.difficulty}"></a>Difficulty</button>
+                    <button class="main__button_type" th:each="type:${typesModel}"><a th:href="@{'/types/' + ${type.difficulty}}" th:text="${type.difficulty}"></a></button>
                 </section>
-                <section class="main__section_worldMap">
+                <section class="main__section_continents">
                     <h2 class="main__section_header">Continents:</h2>
-                    <button class="main__button_type" th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}" th:text="${continent.location}"></a></button>
+                    <button class="main__button_continent" th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}" th:text="${continent.location}"></a></button>
+                </section>
+                <section class="main__section_map">
+                    <div class="main__map_column">
+                        <a href="http://localhost:8080/continents/North%20America"><img src="/images/north-america.jpg" alt="North America" class="map_image"></a>
+                        <a href="http://localhost:8080/continents/North%20America"><div class="main__column_overlay">North America</div></a>
+                    </div>
+                    <div class="main__map_column">
+                        <a href="http://localhost:8080/continents/Europe"><img src="/images/europe.jpg" alt="Europe" class="map_image"></a>
+                        <a href="http://localhost:8080/continents/Europe"><div class="main__column_overlay">Europe</div></a>
+                    </div>
+                    <div class="main__map_column">
+                        <a href="http://localhost:8080/continents/Asia"><img src="/images/asia.jpg" alt="Asia" class="map_image"></a>
+                        <a href="http://localhost:8080/continents/Asia"><div class="main__column_overlay">Asia</div></a>
+                    </div>
+                    <div class="main__map_column">
+                        <a href="http://localhost:8080/continents/South%20America"><img src="/images/south-america.jpg" alt="South America" class="map_image"></a>
+                        <a href="http://localhost:8080/continents/South%20America"><div class="main__column_overlay">South America</div></a>
+                    </div>
+                    <div class="main__map_column">
+                        <a href="http://localhost:8080/continents/Africa"><img src="/images/africa.jpg" alt="Africa" class="map_image"></a>
+                        <a href="http://localhost:8080/continents/Africa"><div class="main__column_overlay">Africa</div></a>
+                    </div>
+                    <div class="main__map_column">
+                        <a href="http://localhost:8080/continents/Australia"><img src="/images/oceania.jpg" alt="Australia" class="map_image"></a>
+                        <a href="http://localhost:8080/continents/Australia"><div class="main__column_overlay">Australia</div></a>
+                    </div>
+                    <div class="main__map_columnAll">
+                        <a href="http://localhost:8080/continents/Antarctica"><img src="/images/antartica.jpg" alt="Antartica" class="map_image"></a>
+                        <a href="http://localhost:8080/continents/Antarctica"><div class="main__column_overlay">Antarctica</div></a>
+                    </div>
                 </section>
             </main>
             <footer class="footer">
                 <section class="footer__section_social">
-                    <a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="Facebook Icon" class="footer__image"></a>
-                    <a href="https://twitter.com/"><img src="/images/twitter.png" alt="Twitter Icon" class="footer__image"></a>
-                    <a href="https://www.instagram.com/"><img src="/images/instagram.png" alt="Instagram Icon" class="footer__image"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="/images/facebook.png" alt="Facebook Icon" class="footer__image"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="/images/twitter.png" alt="Twitter Icon" class="footer__image"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram.png" alt="Instagram Icon" class="footer__image"></a>
                 </section>
                 <section class="footer__section_copy">
                     <p class="footer__section_text">Vincit Qui Se Vincit</p>
