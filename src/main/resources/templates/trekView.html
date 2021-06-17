@@ -32,6 +32,7 @@
 <main>
     <h2 class="main_header" th:text="${trekModel.name}"></h2>
     <div class="trekView">
+        <img th:src="${trekModel.trekImage}">
         <p>
             <span class="headings">Description: </span>
             <span th:text="${trekModel.description}"></span>
