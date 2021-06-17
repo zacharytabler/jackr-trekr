@@ -21,9 +21,11 @@
 </header>
 <main>
     <h2>Continents</h2>
+    <div class="continents"></div>
     <h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
                                                   th:text="${continent.location}" ></a><img th:src="${continent.contImage}"></h2>
-    Continent </a></h2>
+
+    </div>
 </main>
 
 <footer class="footer">
