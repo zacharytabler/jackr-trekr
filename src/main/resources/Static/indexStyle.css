@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Norwester;
+    src: url("norwester.otf") format("opentype");
+}
+
+body {
+    font-family: 'Norwester', sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
 .main {
     background-color: #ECE3D3;
     padding: 3rem;
