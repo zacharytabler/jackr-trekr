@@ -3,9 +3,11 @@
 
 
 body {
+    background-color: white;
+    color: black;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
-    background-color: white;
+
 }
 
 main{
@@ -40,6 +42,11 @@ p {
     text-align: left;
     display:grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.typesOfTreks{
+padding-left: 3em;
+padding-right: 3em;
 }
 
 
