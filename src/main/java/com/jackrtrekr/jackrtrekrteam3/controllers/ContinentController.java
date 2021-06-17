@@ -17,7 +17,6 @@ public class ContinentController {
 
     @Resource
     private ContinentRepository continentRepo;
-
     @Resource
     private TypeRepository typeRepo;
 
