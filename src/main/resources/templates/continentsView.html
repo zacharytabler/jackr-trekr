@@ -20,12 +20,12 @@
     </ul>
 </header>
 <main>
-<h2>Continents</h2>
-
-<h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
-                                              th:text="${continent.location}" ></a><img th:src="${continent.contImage}"></h2>
+    <h2>Continents</h2>
+    <h2 th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}"
+                                                  th:text="${continent.location}" ></a><img th:src="${continent.contImage}"></h2>
     Continent </a></h2>
 </main>
+
 <footer class="footer">
     <section class="footer__section_social">
         <a href="https://www.facebook.com/" target="_blank"><img src="/images/facebook.png" alt="Facebook Icon" class="footer__image"></a>
