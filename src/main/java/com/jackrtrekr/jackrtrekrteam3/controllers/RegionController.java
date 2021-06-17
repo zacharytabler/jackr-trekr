@@ -2,6 +2,7 @@ package com.jackrtrekr.jackrtrekrteam3.controllers;
 
 import com.jackrtrekr.jackrtrekrteam3.models.Region;
 import com.jackrtrekr.jackrtrekrteam3.repositories.RegionRepository;
+import com.jackrtrekr.jackrtrekrteam3.repositories.TrekRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,9 @@ public class RegionController {
     @Resource
     private RegionRepository regionRepo;
 
+    @Resource
+    private TrekRepository trekRepository;
+
     @RequestMapping("/regions")
     public String displayRegions(Model model) {
         model.addAttribute("regionsModel", regionRepo.findAll());
@@ -27,7 +31,7 @@ public class RegionController {
     public String displaySingleRegion(@PathVariable String location, Model model) {
         Optional<Region> retrievedRegion = regionRepo.findRegionByLocation(location);
         Region foundRegion = retrievedRegion.get();
-        model.addAttribute("regionModel", foundRegion);
-        return "regionView";
-    }
+            model.addAttribute("regionModel", foundRegion);
+            return "regionView";
+        }
 }

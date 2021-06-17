@@ -23,6 +23,8 @@
 <main>
     <h2 th:text="${regionModel.location}"></h2>
     <h2 class="" th:each="trek:${regionModel.treks}"><a th:href="@{'/treks/' + ${trek.name}}" th:text="${trek.name}"></a></h2>
+    <div th:each="trek:${regionModel.treks}"> <td th:text="${trek.name} ? ${trek.name} : 'No Treks Found!'"></td></div>
+    <div th:each="trek:${regionModel.treks}"><div th:text="${trek.name} ?: 'No Treks Found!'"></div></div>
 </main>
 <footer class="footer">
     <section class="footer__section_social">
