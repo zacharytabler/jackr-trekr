@@ -1,4 +1,78 @@
 .main {
+    background-color: #ECE3D3;
+    padding: 3rem;
+    max-width: 60rem;
+    margin: auto;
+    width: 95%;
+}
+
+.main__section_difficulty {
     padding-top: 7rem;
-    padding-left: 2rem;
+}
+
+.main__section_map {
+    display: grid;
+    grid-template-columns: 40.7% auto 41.15%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    text-align: center;
+}
+
+.main__map_column {
+    position: relative;
+}
+
+.main__map_columnAll {
+    position: relative;
+}
+
+.main__column_overlay {
+    position: absolute;
+    bottom: 25%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+}
+
+.main__map_column:hover .main__column_overlay {
+    opacity: 1;
+}
+
+.main__map_columnAll:hover .main__column_overlay {
+    opacity: 1;
+}
+
+.map_image {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main__map_columnAll {
+    grid-column: 1/4;
+}
+
+@media (max-width: 500px) {
+
+    .main__map_column {
+        opacity: 0.0;
+    }
+
+    .main__map_columnAll {
+        opacity: 0.0;
+    }
+}
+
+@media (min-width: 500px) {
+    .main__section_continents {
+        opacity: 0.0;
+    }
 }
