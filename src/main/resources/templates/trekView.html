@@ -1,20 +1,89 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/headerfooterstyle.css">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/headerfooterstyle.css"/>
+    <link rel="stylesheet" href="/defaultStyle.css"/>
     <title th:text="${trekModel.name}"></title>
 </head>
 <body>
+<header class="header">
+    <a href="http://localhost:8080/"
+    ><h1 class="header__title">JacKr TreKr</h1></a
+    >
+    <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
+    <label class="header__menu_icon" for="header__menu_btn"
+    ><span class="header__nav_icon"></span
+    ></label>
+    <class class="header__nav_list"></class>
+    <ul class="header__nav_list">
+        <li class="header__nav_listItem">
+            <a href="/continents">Continents</a>
+        </li>
+        <li class="header__nav_listItem"><a href="/regions">Regions</a></li>
+        <li class="header__nav_listItem"><a href="/treks">Treks</a></li>
+        <li class="header__nav_listItem"><a href="/types">Difficulty</a></li>
+        <li class="header__nav_listItem">
+            <a href="/aboutUs.html">About Us</a>
+        </li>
+    </ul>
+</header>
+
 <main>
-    <h2 th:text="${trekModel.name}"></h2>
-    <img th:src="${trekModel.trekImage}">
-    <h2 th:text="${trekModel.description}"></h2>
-    <h2 th:text="${trekModel.continent.location}"></h2>
-    <h2 th:text="${trekModel.region.location}"></h2>
-    <h2 th:text="${trekModel.type.difficulty}"></h2>
-    <h2 th:text="${trekModel.packList}"></h2>
-    <h2 th:text="${trekModel.length}"></h2>
+    <h2 class="main_header" th:text="${trekModel.name}"></h2>
+    <div class="trekView">
+        <img th:src="${trekModel.trekImage}">
+        <p>
+            <span class="headings">Description: </span>
+            <span th:text="${trekModel.description}"></span>
+        </p>
+        <p>
+            <span class="headings">Continent: </span>
+            <span th:text="${trekModel.continent.location}"></span>
+        </p>
+        <p>
+            <span class="headings">Region: </span>
+            <span th:text="${trekModel.region.location}"></span>
+        </p>
+        <p>
+            <span class="headings">Difficulty: </span>
+            <span th:text="${trekModel.type.difficulty}"></span>
+        </p>
+        <p>
+            <span class="headings">Packlist: </span>
+            <span th:text="${trekModel.packList}"></span>
+        </p>
+        <p>
+            <span class="headings">Length: </span>
+            <span th:text="${trekModel.length}"></span>
+        </p>
+    </div>
 </main>
+<footer class="footer">
+    <section class="footer__section_social">
+        <a href="https://www.facebook.com/" target="_blank"
+        ><img
+                src="/images/facebook.png"
+                alt="Facebook Icon"
+                class="footer__image"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+        ><img
+                src="/images/twitter.png"
+                alt="Twitter Icon"
+                class="footer__image"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+        ><img
+                src="/images/instagram.png"
+                alt="Instagram Icon"
+                class="footer__image"
+        /></a>
+    </section>
+    <section class="footer__section_copy">
+        <p class="footer__section_text">Vincit Qui Se Vincit</p>
+        <small class="copyright">&copy JacKr Enterprises 2021</small>
+    </section>
+</footer>
 </body>
 </html>
