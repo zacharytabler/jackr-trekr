@@ -10,6 +10,10 @@ body {
 
 }
 
+.difficult:hover{
+  color: red;
+}
+
 .continents{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -18,11 +22,6 @@ body {
 img {
   height: 300px;
   width: 150px;
-
-.difficult{
-color: red;
-
-}
 
 main{
   background: #ece3d3;
