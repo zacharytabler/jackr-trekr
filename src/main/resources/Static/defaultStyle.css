@@ -10,8 +10,18 @@ body {
 
 }
 
+.continents{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+  height: 300px;
+  width: 150px;
+
 .difficult{
 color: red;
+
 }
 
 main{
@@ -24,7 +34,10 @@ main{
   text-align: center;
 }
 
-
+.trekimg {
+  height: 300px;
+  width: 500px;
+}
 
 .headings {
 font-weight: bold;
@@ -51,6 +64,8 @@ p {
     text-align: left;
     display:grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .typesOfTreks{

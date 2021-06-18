@@ -32,7 +32,7 @@
 <main>
     <h2 class="main_header" th:text="${trekModel.name}"></h2>
     <div class="trekView">
-        <img th:src="${trekModel.trekImage}">
+        <img class="trekimg" th:src="${trekModel.trekImage}">
         <p>
             <span class="headings">Description: </span>
             <span th:text="${trekModel.description}"></span>
@@ -50,13 +50,14 @@
             <span th:text="${trekModel.type.difficulty}"></span>
         </p>
         <p>
-            <span class="headings">Packlist: </span>
-            <span th:text="${trekModel.packList}"></span>
-        </p>
-        <p>
             <span class="headings">Length: </span>
             <span th:text="${trekModel.length}"></span>
         </p>
+        <p>
+            <span class="headings">Packlist: </span>
+            <span th:text="${trekModel.packList}"></span>
+        </p>
+
     </div>
 </main>
 <footer class="footer">

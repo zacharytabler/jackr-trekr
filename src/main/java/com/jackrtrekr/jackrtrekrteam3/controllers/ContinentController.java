@@ -1,5 +1,6 @@
 package com.jackrtrekr.jackrtrekrteam3.controllers;
 
+import com.jackrtrekr.jackrtrekrteam3.errorExceptions.ContinentNotFoundException;
 import com.jackrtrekr.jackrtrekrteam3.models.Continent;
 import com.jackrtrekr.jackrtrekrteam3.repositories.ContinentRepository;
 import com.jackrtrekr.jackrtrekrteam3.repositories.TypeRepository;
@@ -34,9 +35,11 @@ public class ContinentController {
     }
 
     @GetMapping("/continents/{location}")
-    public String displaySingleContinent(@PathVariable String location, Model model) {
-        Continent retrievedContinent = continentRepo.findContinentByLocation(location);
-        model.addAttribute("continentModel", retrievedContinent);
+    public String displaySingleContinent(@PathVariable String location, Model model) throws ContinentNotFoundException {
+        if (continentRepo.findContinentByLocation(location) == null) {
+        throw new ContinentNotFoundException();
+        }
+        model.addAttribute("continentModel", continentRepo.findContinentByLocation(location));
         return "continentView";
     }
 
