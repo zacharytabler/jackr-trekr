@@ -18,7 +18,12 @@ body {
 }
 
 .main__section_difficulty {
-    padding-top: 7rem;
+    padding-top: 6rem;
+}
+
+.main__section_header {
+    text-align: center;
+    width: 100%;
 }
 
 .main__section_map {
