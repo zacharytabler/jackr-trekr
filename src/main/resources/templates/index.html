@@ -24,12 +24,15 @@
                 </ul>
             </header>
             <main class="main">
+                <h2 class="main__welcome_header">Welcome!</h2>
+                <p class="main__welcome_text">Here at JacKr TreKr, we specialize in finding the right trek for you. Whether you're just beginning your trekking journey or you've been trekking your entire life, or if you just happen to find yourself in a new countinent, we can help you find a trek that's right for you. Happy Trekking!</p>
+                <h2 class="main__section_header">Choose Your Difficulty Level:</h2>
                 <section class="main__section_difficulty">
-                    <h2 class="main__section_header">Choose A Difficulty:</h2>
                     <button class="main__button_type" th:each="type:${typesModel}"><a th:href="@{'/types/' + ${type.difficulty}}" th:text="${type.difficulty}"></a></button>
                 </section>
+                <p class="main__between_section">or</p>
+                <h2 class="main__continent_header">Choose the Continent You Wish to Trek:</h2>
                 <section class="main__section_continents">
-                    <h2 class="main__section_header">Continents:</h2>
                     <button class="main__button_continent" th:each="continent:${continentsModel}"><a th:href="@{'/continents/' + ${continent.location}}" th:text="${continent.location}"></a></button>
                 </section>
                 <section class="main__section_map">
@@ -71,6 +74,7 @@
                 </section>
                 <section class="footer__section_copy">
                     <p class="footer__section_text">Vincit Qui Se Vincit</p>
+                    <p class="footer__section_textEnglish">You conquer who conquers yourself.</p>
                     <small class="copyright">&copy JacKr Enterprises 2021</small>
                 </section>
             </footer>
