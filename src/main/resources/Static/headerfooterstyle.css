@@ -3,6 +3,8 @@
     src: url("norwester.otf") format("opentype");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 header a {
     color: white;
 }
@@ -121,6 +123,7 @@ header a {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Nanum Gothic', sans-serif;
     margin-top: 3rem;
     padding-top: 1rem;
 }
@@ -134,7 +137,21 @@ header a {
     padding-bottom: 1rem;
 }
 
-@media (min-width: 48em) {
+.footer__section_text {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer__section_textEnglish {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 834px) {
 
     .header__nav_listItem {
         float: left;
@@ -164,4 +181,5 @@ header a {
         padding: 0;
         text-align: center;
     }
+
 }
