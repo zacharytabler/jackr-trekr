@@ -18,6 +18,10 @@ body {
 img {
   height: 300px;
   width: 150px;
+
+.difficult{
+color: red;
+
 }
 
 main{
@@ -47,6 +51,11 @@ p {
 }
 
 .regions{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.treks {
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
