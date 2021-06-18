@@ -10,6 +10,10 @@ body {
 
 }
 
+.difficult{
+color: red;
+}
+
 main{
   background: #ece3d3;
   color: black;
@@ -34,6 +38,11 @@ p {
 }
 
 .regions{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.treks {
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
