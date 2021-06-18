@@ -1,6 +1,7 @@
 package com.jackrtrekr.jackrtrekrteam3.controllers;
 
 
+import com.jackrtrekr.jackrtrekrteam3.errorExceptions.TypeNotFoundException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -26,9 +27,11 @@ public class TypeController {
     }
 
     @GetMapping("/types/{difficulty}")
-    public String displaySingleType(@PathVariable String difficulty, Model model) {
-        Type retrievedType = typeRepo.findTypeByDifficulty(difficulty);
-        model.addAttribute("typeModel", retrievedType);
+    public String displaySingleType(@PathVariable String difficulty, Model model) throws TypeNotFoundException {
+        if (typeRepo.findTypeByDifficulty(difficulty) == null) {
+            throw new TypeNotFoundException();
+        }
+        model.addAttribute("typeModel", typeRepo.findTypeByDifficulty(difficulty));
         return "typeView";
     }
 
