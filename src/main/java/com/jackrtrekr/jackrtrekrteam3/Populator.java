@@ -12,7 +12,7 @@ import com.jackrtrekr.jackrtrekrteam3.repositories.RegionRepository;
 import com.jackrtrekr.jackrtrekrteam3.repositories.TypeRepository;
 
 import javax.annotation.Resource;
-import java.util.Collection;
+
 
 
 @Component
@@ -150,13 +150,13 @@ public class Populator implements CommandLineRunner {
         Trek banaueRiceTerraces = new Trek("Banaue Rice Terraces", "/images/Banaue Rice Terraces (small).jpg", "The Banaue Rice Terraces are terraces carved into the mountains in the Phillipines. The terraces are located approximately 4,900 feet above sea level. These are fed by an ancient irrigation system from the rainforests above the terraces.", asia, southeastAsia, easy, "Backpack, Water Bottle, Camping Supplies, Food, Cooking Supplies, Walking Stick, and Rain Jacket.","Two to Three Days.");
         trekRepo.save(banaueRiceTerraces);
         
-        Trek kumanoKodo = new Trek("Kumano Kodo", "/images/Kumano Kodo (small).jpg", "The Kumano Kodo is a series of pilgrimage trails in Japan. It has various routes with most people spending 2-4 days trekking. The Kumano Kudo reaches elevated height of up to 3,280 feet. The most popular is the Nakahechi route.", asia, eastAsia, easy, "Backpack, Walking Stick, Jacket, Water Bottle, Camping Supplies, Food, Cooking Supplies, and  Head Lamp", "Two to Three Days.");
+        Trek kumanoKodo = new Trek("Kumano Kodo", "/images/Kumano Kodo (small).jpg", "The Kumano Kodo is a series of pilgrimage trails in Japan. It has various routes with most people spending 2-4 days trekking. The Kumano Kudo reaches elevated height of up to 3,280 feet. The most popular is the Nakahechi route.", asia, eastAsia, easy, "Backpack, Walking Stick, Jacket, Water Bottle, Camping Supplies, Food, Cooking Supplies, and  Head Lamp.", "Two to Three Days.");
         trekRepo.save(kumanoKodo);
         
-        Trek mountFuji = new Trek("Mount Fuji", "/images/Mount Fuji (small).jpg", "Climbing Mount Fuji is a challenge and is something that all Japanese do at least once in their life. Mount Fuji reaches heights of up to 12,400 feet. The trek lasts two days and there are no straight roads. It is all uphill, so it’s best to be prepared.", asia, eastAsia, difficult, "Backpack, Walking Stick, Cramptons, Camping Supplies, Food, Cooking Supplies, Head Lamp, and  Waterproof Climbing Shoes.", "Two Days.");
+        Trek mountFuji = new Trek("Mount Fuji", "/images/Mount Fuji (small).jpg", "Climbing Mount Fuji is one of Japan's most sacred traditions. Mount Fuji reaches heights of up to 12,400 feet. The trek lasts two days and there are no straight roads. It is all uphill, so it’s best to be prepared.", asia, eastAsia, difficult, "Backpack, Walking Stick, Cramptons, Camping Supplies, Food, Cooking Supplies, Head Lamp, and  Waterproof Climbing Shoes.", "Two Days.");
         trekRepo.save(mountFuji);
         
-        Trek shamanseerMountain = new Trek("Shamanseer Mountain", "/images/Shamanseer Mountain.jpg", "Mount Shamanseer is located in Saudi Arabia. It is 5,500 feet above sea level and known for its drawings and inscriptions that depict ancient civilization. This is a very light trail that will only take about 2 to 3 days to complete. Hikers will walk a total of 65 miles over. Heights will reach up to 5,500 feet. The path is rocky.", asia, southwestAsia, easy, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor", "Two to Three Days.");
+        Trek shamanseerMountain = new Trek("Shamanseer Mountain", "/images/Shamanseer Mountain.jpg", "Mount Shamanseer is located in Saudi Arabia. It is 5,500 feet above sea level and known for its drawings and inscriptions that depict ancient civilization. This is a very light trail that will only take about 2 to 3 days to complete. Hikers will walk a total of 65 miles over. Heights will reach up to 5,500 feet. The path is rocky.", asia, southwestAsia, easy, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor.", "Two to Three Days.");
         trekRepo.save(shamanseerMountain);
         
         Trek danaToPetra = new Trek("Dana to Petra Trek", "/images/Dana to Petra (small).jpg", "Trek for eight days through Jordan's beautiful and rugged countryside, following the 'Jordan Trail' from Dana Nature Reserve to the ancient 'Rose-Red City' of Petra, and camping Bedouin style. Enjoy a wonderful week of discovery, walking and Jordanian hospitality. This trek will reach heights of 3,800 feet.", asia, southwestAsia, moderate, "Backpack, Water Bottle, Camping Supplies, Food, Cooking Supplies, Hat or Visor, and Sunscreen.", "Eight Days.");
@@ -166,23 +166,23 @@ public class Populator implements CommandLineRunner {
         trekRepo.save(everestBaseCamp);
 
         //      Continent:Antarctica
-        Trek mtVinson = new Trek("Mount Vinson", "/images/Mount Vinson.jpg", "Mount Vinson, located approximately 600 miles from the South Pole, is the highest peak in Antarctica. This 15 day trek will test your limits. Temperatures can dip below -40 degrees F, and you will have to weather ice, snow, and rocks to reach the peak. ", antarctica, southPole, difficult, "Mountain Boots, Overboots, Water bottle, Camping Supplies, Food, Cooking Supplies, Ski Goggles, and Head Lamp", "Fifteen Days");
+        Trek mtVinson = new Trek("Mount Vinson", "/images/Mount Vinson.jpg", "Mount Vinson, located approximately 600 miles from the South Pole, is the highest peak in Antarctica. This 15 day trek will test your limits. Temperatures can dip below -40 degrees F, and you will have to weather ice, snow, and rocks to reach the peak. ", antarctica, southPole, difficult, "Mountain Boots, Overboots, Water bottle, Camping Supplies, Food, Cooking Supplies, Ski Goggles, and Head Lamp.", "Fifteen Days");
         trekRepo.save(mtVinson);
 
         //      Continent: Africa
-        Trek mountKilimanjaro = new Trek ("Mount Kilimanjaro", "/images/Mount Kilimanjaro (small).jpg", "The highest mountain in Africa rising to more than 19,000 feet in elevation.", africa, savanna, moderate, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor","Three to Five Days");
+        Trek mountKilimanjaro = new Trek ("Mount Kilimanjaro", "/images/Mount Kilimanjaro (small).jpg", "The highest mountain in Africa rising to more than 19,000 feet in elevation.", africa, savanna, moderate, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor.","Three to Five Days");
         trekRepo.save(mountKilimanjaro);
 
-        Trek maasaiMara = new Trek("Maasai Mara", "/images/Maasai Mara (small).jpg", "The Maasai Mara is a National Reserve in Kenya that offers several cross-country treks. Animals you may encounter include cheetahs, leopards, zebras, and elephants. It is all across flat lands.", africa, southernAfrica, moderate,"Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor", "Five to Seven Days");
+        Trek maasaiMara = new Trek("Maasai Mara", "/images/Maasai Mara (small).jpg", "The Maasai Mara is a National Reserve in Kenya that offers several cross-country treks. Animals you may encounter include cheetahs, leopards, zebras, and elephants. It is all across flat lands.", africa, southernAfrica, moderate,"Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor.", "Five to Seven Days");
         trekRepo.save(maasaiMara);
 
-        Trek blydeRiverCanyon = new Trek("Blyde River Canyon","/images/Blyde River Canyon (small).jpg",  "This lush valley is the third-largest canyon in the world, and is marked by a clear, blue river cutting through sheer stone drop-offs 2,600 feet high.", africa, southernAfrica, strenuous, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor, Hunting Knife", "Twenty Days");
+        Trek blydeRiverCanyon = new Trek("Blyde River Canyon","/images/Blyde River Canyon (small).jpg",  "This lush valley is the third-largest canyon in the world, and is marked by a clear, blue river cutting through sheer stone drop-offs 2,600 feet high.", africa, southernAfrica, strenuous, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor, Hunting Knife.", "Twenty Days");
         trekRepo.save(blydeRiverCanyon);
 
-        Trek danakilDepression = new Trek("Danakil Depression",  "/images/Danakil Depression (small).jpg","The Danakil Depression is one of the most inhospitable places on the planet, and yet life flourishes here. The Afar people thrive here.", africa, ethiopianHighlands, moderate, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor, and Head Lamp", "One day and One Night");
+        Trek danakilDepression = new Trek("Danakil Depression",  "/images/Danakil Depression (small).jpg","The Danakil Depression is one of the most inhospitable places on the planet, and yet life flourishes here. The Afar people thrive here.", africa, ethiopianHighlands, moderate, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor, and Head Lamp.", "One day and One Night");
         trekRepo.save(danakilDepression);
 
-        Trek livingstonia = new Trek("Livingstonia", "/images/Livingstonia.jpg", "The Livingstonia day hike is 10 mile hike above Lake Malawi. Attractions you will see include the Mushroom Farm, Stone House Museum, and University of Livingstonia.", africa, africanGreatLakes, easy, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor", "One Day");
+        Trek livingstonia = new Trek("Livingstonia", "/images/Livingstonia.jpg", "The Livingstonia day hike is 10 mile hike above Lake Malawi. Attractions you will see include the Mushroom Farm, Stone House Museum, and University of Livingstonia.", africa, africanGreatLakes, easy, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor.", "One Day");
         trekRepo.save(livingstonia);
 
 
@@ -201,7 +201,7 @@ public class Populator implements CommandLineRunner {
         Trek tourDeMontBlanc = new Trek("Tour De Mont Blanc", "/images/tour du mont blanc (small).jpg", "This mother of all treks circumnavigates the mighty slopes of the highest mountain in the Alps", europe,france, difficult,"Backpack, Walking Stick, Camping Supplies, Food, Cooking Supplies, Head Lamp, and Waterproof Climbing Shoes.","Ten to Fifteen Days");
         trekRepo.save(tourDeMontBlanc);
 
-        Trek norwegianFjords = new Trek("Norwegian Fjords", "/images/Norwegian Fjords.jpg", "Take the family on treks over blue glaciers, and viewing mountains that come straight up from the narrow fjords.",europe, northernTerritory, easy, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor","One Day");
+        Trek norwegianFjords = new Trek("Norwegian Fjords", "/images/Norwegian Fjords.jpg", "Take the family on treks over blue glaciers, and viewing mountains that come straight up from the narrow fjords.",europe, northernTerritory, easy, "Water Bottle, Sunglasses, Sunscreen, Hat or Visor.","One Day");
         trekRepo.save(norwegianFjords);
 
         Trek tourDeMonteRosa = new Trek("Tour De Monte Rosa", "/images/Tour De Monte Rosa.jpg", "The trek around this 15,710 foot mountain is stunning - and it is not easy. Every day there are steep ascents and descents over ice and rock.", europe, italianPeninsula, difficult,"Backpack, Walking Stick, Camping Supplies, Food, Cooking Supplies, Head lamp, and Waterproof Climbing Shoes.", "Eleven to Fifteen Days");
@@ -212,7 +212,7 @@ public class Populator implements CommandLineRunner {
 
 
 //      Continent: South America
-        Trek chapadaDiamantinaNationalPark = new Trek("Chapada Diamantina National Park", "/images/Chapada Diamantina (small).jpg", "One of the most beautiful National Parks in Brazil, Chapada Diamantina is located in Bahia in northeast Brazil. Altitudes vary from 1,600 to 3,300 feet. At the highest point, gold and diamonds have been found.", southAmerica, brazilianCoastline, moderate, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor", "Two to Five Days.");
+        Trek chapadaDiamantinaNationalPark = new Trek("Chapada Diamantina National Park", "/images/Chapada Diamantina (small).jpg", "One of the most beautiful National Parks in Brazil, Chapada Diamantina is located in Bahia in northeast Brazil. Altitudes vary from 1,600 to 3,300 feet. At the highest point, gold and diamonds have been found.", southAmerica, brazilianCoastline, moderate, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor.", "Two to Five Days.");
         trekRepo.save(chapadaDiamantinaNationalPark);
 
         Trek theIncaTrail = new Trek("The Inca Trail","/images/Inca Trail (small).jpg",  "When you think of trekking in South America, you think of the Inca Trail. It is seen by many as a top five trek in the world. It is only 26 miles long, but the payoff destination is Machu Picchu.", southAmerica, brazilianCoastline, moderate, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor.", "Three to Five Days");
@@ -223,10 +223,10 @@ public class Populator implements CommandLineRunner {
 
 
 //      Continent: North America
-        Trek yellowstone = new Trek("Yellowstone Park", "/images/Yellowstone (small).jpg", "Yellowstone National Park in Wyoming, Montana and Idaho is a hiker's paradise, with approximately 1,000 miles of hiking trails across more than 2.2 million acres.", northAmerica, mountainousWest, difficult, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor", "Five to Seven Days");
+        Trek yellowstone = new Trek("Yellowstone Park", "/images/Yellowstone (small).jpg", "Yellowstone National Park in Wyoming, Montana and Idaho is a hiker's paradise, with approximately 1,000 miles of hiking trails across more than 2.2 million acres.", northAmerica, mountainousWest, difficult, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor.", "Five to Seven Days");
         trekRepo.save(yellowstone);
 
-        Trek grandTetonNationalPark = new Trek("Grand Teton National Park", "/images/Grand Teton (small).jpg", "The park, which sits in Wyoming's Jackson Hole valley, caters to every level of hiker with its more than 200 miles of trails.", northAmerica, greatPlains, moderate,"Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor", "One to Five Days");
+        Trek grandTetonNationalPark = new Trek("Grand Teton National Park", "/images/Grand Teton (small).jpg", "The park, which sits in Wyoming's Jackson Hole valley, caters to every level of hiker with its more than 200 miles of trails.", northAmerica, greatPlains, moderate,"Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor.", "One to Five Days");
         trekRepo.save(grandTetonNationalPark);
 
         Trek theAppalachianTrail = new Trek("The Appalachian Trail", "/images/Appalachian Trail (small).jpg", "The Appalachian Trail is a 2,180 mile long public footpath that traverses the scenic, wooded, pastoral, wild, and culturally resonant lands of the Appalachian Mountains.", northAmerica, variedEasternRegion, strenuous, "Water Bottle, Camping Supplies, Food, Cooking Supplies, Sunglasses, Sunscreen, Hat or Visor, Hunting Knife, Firearm.", "One to Three Months");
