@@ -30,6 +30,7 @@ Jackr Trekr is a Spring JPA application that allows trekking enthusiasts to find
 * The MVC Design Pattern
 * Working with Java Collections
 * Object Oriented Programming (Abstraction, Polymorphism, & Encapsulation) 
+* Introduced To The Agile Methodology 
 
 ### How To Use 🔧
 From your command line, clone Jackr Trekr:
