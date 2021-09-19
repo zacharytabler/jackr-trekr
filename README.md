@@ -14,8 +14,8 @@ Jackr Trekr is a Spring JPA application that allows trekking enthusiasts to find
 
 ### Authors 🖊️
 * Duwe Aynab - **[Github](https://github.com/DuweAynab)**, **[Portfolio](https://DuweAynab.github.io)**
-* Nick Billhardt - **[Github](https://github.com/nbillhardt)**, **[Portfolio](nbillhardt.github.io/)**
+* Nick Billhardt - **[Github](https://github.com/nbillhardt)**, **[Portfolio](https://nbillhardt.github.io/)**
 * Danielle Bosworth - **[Github](https://github.com/danielleboz)**, **[Portfolio](https://danielleboz.github.io/)**
 * Ty Jackson -  **[Github](https://github.com/Tjackson90)**, **[Portfolio](https://TJackson90.github.io/)**
-* Zachary Tabler -  **[Github](https://github.com/zacharytabler)**, **[Portfolio](zacharytabler.github.io/)** 
+* Zachary Tabler -  **[Github](https://github.com/zacharytabler)**, **[Portfolio](https://zacharytabler.github.io/)** 
 
