@@ -12,6 +12,7 @@ Jackr Trekr is a Spring JPA application that allows trekking enthusiasts to find
 * An About Us page that features the team that built Jackr Trekr
 
 ### Technologies Used 🧰
+* Java
 * HTML
 * CSS
 * Spring Boot
